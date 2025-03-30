@@ -27,58 +27,60 @@
       theme: {
         extend: {
           colors: {
-            // Updated Hindu-inspired color palette
+            // Updated Hindu-inspired color palette with more vibrant tones
             primary: {
-              50: '#fff4e0',
-              100: '#ffe3b3',
-              200: '#ffd280',
-              300: '#ffc14d',
-              400: '#ffb01a',
-              500: '#ffa000', // Main saffron/yellow
-              600: '#e68a00',
-              700: '#cc7700',
-              800: '#b36600',
-              900: '#995500',
+              50: '#fff9e6',
+              100: '#fff0c2',
+              200: '#ffe799',
+              300: '#ffdd71',
+              400: '#ffd348',
+              500: '#ffc91f', // Brighter saffron/yellow
+              600: '#edb700',
+              700: '#d6a500',
+              800: '#ba9000',
+              900: '#9e7a00',
             },
             secondary: {
-              50: '#f9e6ff',
-              100: '#f0c6ff',
-              200: '#e7a7ff',
-              300: '#dd87ff',
-              400: '#d468ff',
-              500: '#8a34d1', // Deep purple (royal)
-              600: '#7a2bc0',
-              700: '#6a22af',
-              800: '#5a1a9f',
-              900: '#4a118e',
+              50: '#fcf0ff',
+              100: '#f8d9ff',
+              200: '#f3b3ff',
+              300: '#ed8dff',
+              400: '#e766ff',
+              500: '#c445e6', // Brighter purple (royal)
+              600: '#ad34d1',
+              700: '#962abc',
+              800: '#7f21a7',
+              900: '#681992',
             },
             accent: {
-              50: '#fff1f1',
-              100: '#ffd7d7',
+              50: '#fff0f0',
+              100: '#ffd6d6',
               200: '#ffbdbd',
               300: '#ff9494',
-              400: '#ff6a6a',
-              500: '#d90000', // Deep red (kumkum)
-              600: '#c00000',
-              700: '#a70000',
-              800: '#8e0000',
-              900: '#750000',
+              400: '#ff6b6b',
+              500: '#ff4242', // Brighter red (kumkum)
+              600: '#f51d1d',
+              700: '#e00e0e',
+              800: '#c10c0c',
+              900: '#a30a0a',
             },
             tertiary: {
-              50: '#e6f0ff',
-              100: '#cce0ff',
-              200: '#99c2ff',
-              300: '#66a3ff',
-              400: '#3385ff',
-              500: '#003380', // Dark navy (Krishna blue)
-              600: '#00296b',
-              700: '#001f56',
-              800: '#001542',
-              900: '#000c2d',
+              50: '#f0f6ff',
+              100: '#e0edff',
+              200: '#c2ddff',
+              300: '#9bc6ff',
+              400: '#74afff',
+              500: '#4c98ff', // Lighter blue
+              600: '#1a7eff',
+              700: '#0065e8',
+              800: '#0052bd', // Darker blue for text
+              900: '#00429a',
             },
             neutral: {
-              800: '#241f1c', // Deep brown
-              900: '#1a1714', // Darker brown
+              50: '#f9f7f5',
+              100: '#f3efe9',
+              800: '#3d3833', // Softer brown
+              900: '#2e2a27', // Softer darker brown
             }
           },
           fontFamily: {
@@ -450,30 +452,34 @@
           </div>
         </div>
       </nav> -->
-      <nav id="navbar"
-        class="fixed w-full top-0 z-50 bg-tertiary-800/90 backdrop-blur-sm border-b border-primary-500/30">
+      <nav id="navbar" class="fixed w-full top-0 z-50 bg-primary-500/90 backdrop-blur-sm border-b border-accent-500/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-20">
             <div class="flex-shrink-0 flex items-center">
-              <span class="text-2xl font-bold text-primary-500">Dr. Dharmanand</span>
+              <!-- Sun image with pulse animation (no rotation) -->
+              <div class="mr-3 w-12 h-12 relative flex items-center justify-center">
+                <img src="images/sun.png" alt="Sun" class="w-full h-full object-contain animate-sun-pulse">
+              </div>
+
+              <span class="text-xl font-bold text-tertiary-800">Dr. Dharmanand Astrology </br> & Company</span>
             </div>
 
             <div class="hidden md:block">
               <div class="ml-10 flex items-center space-x-8">
-                <a href="#hero" class="text-primary-100 hover:text-primary-500 transition-colors">Home</a>
-                <a href="#services" class="text-primary-100 hover:text-primary-500 transition-colors">Services</a>
-                <a href="#about" class="text-primary-100 hover:text-primary-500 transition-colors">About</a>
-                <a href="#benefits" class="text-primary-100 hover:text-primary-500 transition-colors">Benefits</a>
-                <a href="#youtube" class="text-primary-100 hover:text-primary-500 transition-colors">Videos</a>
+                <a href="#hero" class="text-tertiary-800 hover:text-accent-600 transition-colors">Home</a>
+                <a href="#services" class="text-tertiary-800 hover:text-accent-600 transition-colors">Services</a>
+                <a href="#about" class="text-tertiary-800 hover:text-accent-600 transition-colors">About</a>
+                <a href="#benefits" class="text-tertiary-800 hover:text-accent-600 transition-colors">Benefits</a>
+                <a href="#youtube" class="text-tertiary-800 hover:text-accent-600 transition-colors">Videos</a>
                 <a href="#testimonials"
-                  class="text-primary-100 hover:text-primary-500 transition-colors">Testimonials</a>
-                <a href="#zodiac" class="text-primary-100 hover:text-primary-500 transition-colors">2025 Predictions</a>
-                <a href="#contact" class="text-primary-100 hover:text-primary-500 transition-colors">Contact</a>
+                  class="text-tertiary-800 hover:text-accent-600 transition-colors">Testimonials</a>
+                <a href="#zodiac" class="text-tertiary-800 hover:text-accent-600 transition-colors">2025 Predictions</a>
+                <a href="#contact" class="text-tertiary-800 hover:text-accent-600 transition-colors">Contact</a>
               </div>
             </div>
 
             <div class="md:hidden">
-              <button id="menu-btn" class="text-primary-100 hover:text-primary-500 focus:outline-none">
+              <button id="menu-btn" class="text-tertiary-800 hover:text-accent-600 focus:outline-none">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -484,19 +490,40 @@
 
         <!-- Mobile menu -->
         <div id="mobile-menu"
-          class="hidden md:hidden bg-tertiary-800/95 backdrop-blur-sm animate__animated animate__fadeIn">
+          class="hidden md:hidden bg-primary-400/95 backdrop-blur-sm animate__animated animate__fadeIn">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#hero" class="block px-3 py-2 text-primary-100 hover:text-primary-500">Home</a>
-            <a href="#services" class="block px-3 py-2 text-primary-100 hover:text-primary-500">Services</a>
-            <a href="#about" class="block px-3 py-2 text-primary-100 hover:text-primary-500">About</a>
-            <a href="#benefits" class="block px-3 py-2 text-primary-100 hover:text-primary-500">Benefits</a>
-            <a href="#youtube" class="block px-3 py-2 text-primary-100 hover:text-primary-500">Videos</a>
-            <a href="#testimonials" class="block px-3 py-2 text-primary-100 hover:text-primary-500">Testimonials</a>
-            <a href="#zodiac" class="block px-3 py-2 text-primary-100 hover:text-primary-500">2025 Predictions</a>
-            <a href="#contact" class="block px-3 py-2 text-primary-100 hover:text-primary-500">Contact</a>
+            <a href="#hero" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Home</a>
+            <a href="#services" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Services</a>
+            <a href="#about" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">About</a>
+            <a href="#benefits" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Benefits</a>
+            <a href="#youtube" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Videos</a>
+            <a href="#testimonials" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Testimonials</a>
+            <a href="#zodiac" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">2025 Predictions</a>
+            <a href="#contact" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Contact</a>
           </div>
         </div>
       </nav>
+
+      <!-- Add these styles to your CSS -->
+      <style>
+        @keyframes sun-pulse {
+
+          0%,
+          100% {
+            transform: scale(1);
+            filter: brightness(1);
+          }
+
+          50% {
+            transform: scale(1.08);
+            filter: brightness(1.1);
+          }
+        }
+
+        .animate-sun-pulse {
+          animation: sun-pulse 4s ease-in-out infinite;
+        }
+      </style>
 
       <script>
         const menuBtn = document.getElementById('menu-btn');
@@ -536,92 +563,88 @@
   <htmlCode>
     <div id="root">
       <section id="hero"
-      class="min-h-[70vh] bg-gradient-to-br from-tertiary-900 via-tertiary-800 to-tertiary-700 relative overflow-hidden">
-      <!-- Background decorative elements with rangoli-inspired pattern -->
-      <div class="absolute inset-0 opacity-10">
-        <!-- Primary background pattern from contact section -->
-        <div class="w-full h-full">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <!-- Traditional Indian pattern -->
-            <pattern id="hero-rangoli" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <circle cx="50" cy="50" r="40" stroke="#ffa000" stroke-width="1" fill="none"/>
-              <circle cx="50" cy="50" r="30" stroke="#ffa000" stroke-width="1" fill="none"/>
-              <circle cx="50" cy="50" r="20" stroke="#ffa000" stroke-width="1" fill="none"/>
-              <path d="M10,50 L90,50" stroke="#ffa000" stroke-width="1"/>
-              <path d="M50,10 L50,90" stroke="#ffa000" stroke-width="1"/>
-              <path d="M25,25 L75,75" stroke="#ffa000" stroke-width="1"/>
-              <path d="M25,75 L75,25" stroke="#ffa000" stroke-width="1"/>
-              <!-- Decorative flower shapes -->
-              <path d="M50,10 Q60,20 50,30 Q40,20 50,10" stroke="#ffa000" stroke-width="1" fill="none"/>
-              <path d="M50,70 Q60,80 50,90 Q40,80 50,70" stroke="#ffa000" stroke-width="1" fill="none"/>
-              <path d="M10,50 Q20,60 30,50 Q20,40 10,50" stroke="#ffa000" stroke-width="1" fill="none"/>
-              <path d="M70,50 Q80,60 90,50 Q80,40 70,50" stroke="#ffa000" stroke-width="1" fill="none"/>
-            </pattern>
-            <rect x="0" y="0" width="100%" height="100%" fill="url(#hero-rangoli)"/>
-          </svg>
-        </div>
-        
-        <!-- Additional lighting effects -->
-        <div
-          class="absolute top-0 left-0 w-96 h-96 bg-primary-500 rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-30">
-        </div>
-        <div
-          class="absolute bottom-0 right-0 w-96 h-96 bg-primary-400 rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2 opacity-30">
-        </div>
-      </div>
-    
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full pt-32">
-        <div class="grid md:grid-cols-2 gap-8 items-center h-full">
-          <div class="text-center md:text-left animate__animated animate__fadeInLeft">
-            <h1 class="text-4xl md:text-6xl font-bold text-primary-500 mb-4">
-              Vedic Astrology Expert
-            </h1>
-            <h2 class="text-2xl md:text-3xl font-semibold text-primary-100 mb-6">
-              Dr. Dharmanand Thakur
-            </h2>
-            <p class="text-xl text-primary-200 mb-8">
-              With over 27+ years of experience in Hindu astrology, unlock the secrets of your destiny and find
-              guidance in life's journey.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="#contact"
-                class="inline-block px-8 py-4 bg-primary-500 hover:bg-primary-600 text-tertiary-900 font-bold rounded-lg transition-colors animate__animated animate__pulse animate__infinite">
-                Book Consultation
-              </a>
-              <a href="#services"
-                class="inline-block px-8 py-4 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-tertiary-900 font-bold rounded-lg transition-all">
-                Explore Services
-              </a>
-            </div>
+        class="min-h-[70vh] bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 relative overflow-hidden">
+        <!-- Background decorative elements with rangoli-inspired pattern -->
+        <div class="absolute inset-0 opacity-20">
+          <!-- Primary background pattern from contact section -->
+          <div class="w-full h-full">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <!-- Traditional Indian pattern -->
+              <pattern id="hero-rangoli" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                <circle cx="50" cy="50" r="40" stroke="#FFFFFF" stroke-width="1" fill="none" />
+                <circle cx="50" cy="50" r="30" stroke="#FFFFFF" stroke-width="1" fill="none" />
+                <circle cx="50" cy="50" r="20" stroke="#FFFFFF" stroke-width="1" fill="none" />
+                <path d="M10,50 L90,50" stroke="#FFFFFF" stroke-width="1" />
+                <path d="M50,10 L50,90" stroke="#FFFFFF" stroke-width="1" />
+                <path d="M25,25 L75,75" stroke="#FFFFFF" stroke-width="1" />
+                <path d="M25,75 L75,25" stroke="#FFFFFF" stroke-width="1" />
+                <!-- Decorative flower shapes -->
+                <path d="M50,10 Q60,20 50,30 Q40,20 50,10" stroke="#FFFFFF" stroke-width="1" fill="none" />
+                <path d="M50,70 Q60,80 50,90 Q40,80 50,70" stroke="#FFFFFF" stroke-width="1" fill="none" />
+                <path d="M10,50 Q20,60 30,50 Q20,40 10,50" stroke="#FFFFFF" stroke-width="1" fill="none" />
+                <path d="M70,50 Q80,60 90,50 Q80,40 70,50" stroke="#FFFFFF" stroke-width="1" fill="none" />
+              </pattern>
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#hero-rangoli)" />
+            </svg>
           </div>
-    
-          <div class="relative animate__animated animate__fadeInRight">
-            <div class="aspect-square rounded-full bg-primary-500/10 backdrop-blur-sm p-8 relative">
-              <div
-                class="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-transparent rounded-full animate-spin-slow">
+
+          <!-- Additional lighting effects -->
+          <div
+            class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-30">
+          </div>
+          <div
+            class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2 opacity-30">
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full pt-32">
+          <div class="grid md:grid-cols-2 gap-8 items-center h-full">
+            <div class="text-center md:text-left animate__animated animate__fadeInLeft">
+              <h1 class="text-4xl md:text-6xl font-bold text-tertiary-900 mb-4 leading-tight">
+                Vedic Astrology Expert
+              </h1>
+              <h2 class="text-2xl md:text-3xl font-semibold text-white mb-3">
+                Dr. Dharmanand Thakur 
+              </h2>
+              <p class="text-sm md:text-base font-medium text-white/90 mb-4 italic">
+                (BA-Hons(Shastri), B.Ed.(Shiksha Shastri), M.A.(Ganit), M.A(Falit), M.A.(Shaitya), PhD)
+              </p>
+              <h3 class="text-xl md:text-2xl font-semibold text-white/95 mb-6 border-b border-white/20 pb-3 inline-block">
+                Maa Siddheshwari Jyotish Office
+              </h3>
+              <p class="text-lg text-white/90 mb-8 max-w-2xl">
+                With over 27+ years of experience in Hindu astrology, unlock the secrets of your destiny and find
+                guidance in life's journey.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#contact"
+                  class="inline-block px-8 py-4 bg-white hover:bg-tertiary-50 text-primary-600 font-bold rounded-lg transition-colors animate__animated animate__pulse animate__infinite shadow-lg">
+                  Book Consultation
+                </a>
+                <a href="#services"
+                  class="inline-block px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-primary-600 font-bold rounded-lg transition-all">
+                  Explore Services
+                </a>
               </div>
-              <div class="h-full w-full rounded-full border-2 border-primary-500/50 flex items-center justify-center">
-                <div class="text-center">
-                  <div class="text-6xl text-primary-500 mb-4">ॐ</div>
-                  <div class="text-xl text-primary-100 font-semibold">Expert Hindu Astrologer</div>
-                  <div class="text-primary-200 mt-2">27+ Years Experience</div>
+            </div>
+
+            <div class="relative animate__animated animate__fadeInRight">
+              <div class="aspect-square rounded-full bg-white/10 backdrop-blur-sm p-8 relative">
+                <div
+                  class="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent rounded-full animate-spin-slow">
+                </div>
+                <div class="h-full w-full rounded-full border-2 border-white/50 flex items-center justify-center">
+                  <div class="text-center">
+                    <div class="text-6xl text-white mb-4">ॐ</div>
+                    <div class="text-xl text-white font-semibold">Illuminating Lives Through Vedic Wisdom</div>
+                    <div class="text-white/80 mt-2">27+ Years Experience</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    
-      <!-- Decorative bottom wave -->
-      <!-- <div class="absolute bottom-0 left-0 w-full overflow-hidden">
-        <svg class="relative block w-full h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="fill-primary-50"></path>
-        </svg>
-      </div> -->
-    </section>
+      </section>
     </div>
   </htmlCode>
 </element>
@@ -629,227 +652,246 @@
 
   <htmlCode>
     <div id="root">
-      <section id="services" class="py-20 bg-neutral-100">
+      <section id="services" class="py-20 bg-primary-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-neutral-900 mb-4">Our Services</h2>
-            <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
-            <p class="text-lg text-neutral-600 mt-4">Discover divine guidance through our comprehensive astrological
+            <h2 class="text-4xl font-bold text-tertiary-800 mb-4">Our Services</h2>
+            <div class="w-24 h-1 bg-accent-500 mx-auto"></div>
+            <p class="text-lg text-tertiary-600 mt-4">Discover divine guidance through our comprehensive astrological
               services</p>
           </div>
 
           <div class="grid md:grid-cols-3 gap-8">
             <!-- Service 1 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-primary-500">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-3xl">🪐</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Birth Chart Analysis</h3>
-              <p class="text-neutral-600 text-center">Detailed analysis of your birth chart (Kundli) to understand your
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Birth Chart Making</h3>
+              <p class="text-tertiary-600 text-center">Expert creation of personalized Vedic birth charts revealing your cosmic blueprint.</p>
+              <div class="mt-6 text-center">
+                <a href="#contact"
+                  class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
+                  Now</a>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-primary-500">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">🪐</span>
+              </div>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Birth Chart Analysis</h3>
+              <p class="text-tertiary-600 text-center">Detailed analysis of your birth chart (Kundli) to understand your
                 life path, career, and relationships.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
             <!-- Service 2 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-accent-500"
               style="animation-delay: 0.2s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-3xl">🪐</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Horoscope Reading</h3>
-              <p class="text-neutral-600 text-center">Horoscope matching for marriage (Kundli Milan) to ensure
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Horoscope Reading</h3>
+              <p class="text-tertiary-600 text-center">Horoscope matching for marriage (Kundli Milan) to ensure
                 harmonious relationships.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
-            <!-- Service 2 -->
+            <!-- Service 3 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-secondary-500"
               style="animation-delay: 0.2s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-3xl">💑</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Kundli Matching</h3>
-              <p class="text-neutral-600 text-center">Horoscope matching for marriage (Kundli Milan) to ensure
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Kundli Matching</h3>
+              <p class="text-tertiary-600 text-center">Horoscope matching for marriage (Kundli Milan) to ensure
                 harmonious relationships.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
-                  Now</a>
-              </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 0.4s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span class="text-3xl">✋🏻</span>
-              </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Palmistry</h3>
-              <p class="text-neutral-600 text-center">Expert guidance on Vastu Shastra for your home and business
-                premises.</p>
-              <div class="mt-6 text-center">
-                <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
-                  Now</a>
-              </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 0.4s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span class="text-3xl">🏠</span>
-              </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Vastu Shastra</h3>
-              <p class="text-neutral-600 text-center">Expert guidance on Vastu Shastra for your home and business
-                premises.</p>
-              <div class="mt-6 text-center">
-                <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-secondary-500 text-white rounded-lg hover:bg-secondary-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
             <!-- Service 4 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 0.6s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span class="text-3xl">🔢</span>
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-primary-500"
+              style="animation-delay: 0.4s;">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">✋🏻</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Numerlogy</h3>
-              <p class="text-neutral-600 text-center">Astrological insights for career decisions and business ventures.
-              </p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Palmistry</h3>
+              <p class="text-tertiary-600 text-center">Expert guidance on Vastu Shastra for your home and business
+                premises.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
             <!-- Service 5 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 0.8s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span class="text-3xl">💎</span>
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-accent-500"
+              style="animation-delay: 0.4s;">
+              <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">🏠</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Gemstone Consultation</h3>
-              <p class="text-neutral-600 text-center">Personalized recommendations for astrological gemstones and
-                remedies.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Vastu Shastra</h3>
+              <p class="text-tertiary-600 text-center">Expert guidance on Vastu Shastra for your home and business
+                premises.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
-                  Now</a>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 0.8s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span class="text-3xl">🙏</span>
-              </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Rituals</h3>
-              <p class="text-neutral-600 text-center">Personalized recommendations for astrological gemstones and
-                remedies.</p>
-              <div class="mt-6 text-center">
-                <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
             <!-- Service 6 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 1s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span class="text-3xl">🙏</span>
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-secondary-500"
+              style="animation-delay: 0.6s;">
+              <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">🔢</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Yajnas</h3>
-              <p class="text-neutral-600 text-center">Customized spiritual solutions and remedial measures for various
-                problems.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Numerlogy</h3>
+              <p class="text-tertiary-600 text-center">Astrological insights for career decisions and business ventures.
+              </p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-secondary-500 text-white rounded-lg hover:bg-secondary-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
+            <!-- Service 7 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 1s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span class="text-3xl">🙏</span>
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-primary-500"
+              style="animation-delay: 0.8s;">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">💎</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Shri Ram Katha</h3>
-              <p class="text-neutral-600 text-center">Customized spiritual solutions and remedial measures for various
-                problems.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Gemstone Consultation</h3>
+              <p class="text-tertiary-600 text-center">Personalized recommendations for astrological gemstones and
+                remedies.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
+            <!-- Service 8 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
-              style="animation-delay: 1s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-accent-500"
+              style="animation-delay: 0.8s;">
+              <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-3xl">🙏</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Bhagavad Katha</h3>
-              <p class="text-neutral-600 text-center">Customized spiritual solutions and remedial measures for various
-                problems.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Rituals</h3>
+              <p class="text-tertiary-600 text-center">Personalized recommendations for astrological gemstones and
+                remedies.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
+            <!-- Service 9 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-secondary-500"
               style="animation-delay: 1s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-3xl">🙏</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Shiv Mahapuran</h3>
-              <p class="text-neutral-600 text-center">Customized spiritual solutions and remedial measures for various
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Yajnas</h3>
+              <p class="text-tertiary-600 text-center">Customized spiritual solutions and remedial measures for various
                 problems.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-secondary-500 text-white rounded-lg hover:bg-secondary-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
 
+            <!-- Service 10 -->
             <div
-              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp"
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-primary-500"
               style="animation-delay: 1s;">
-              <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-3xl">🙏</span>
               </div>
-              <h3 class="text-xl font-bold text-neutral-900 mb-3 text-center">Devi Bhagwat</h3>
-              <p class="text-neutral-600 text-center">Customized spiritual solutions and remedial measures for various
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Shri Ram Katha</h3>
+              <p class="text-tertiary-600 text-center">Customized spiritual solutions and remedial measures for various
                 problems.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
-                  class="inline-block px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">Book
+                  class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
+                  Now</a>
+              </div>
+            </div>
+
+            <!-- Service 11 -->
+            <div
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-accent-500"
+              style="animation-delay: 1s;">
+              <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">🙏</span>
+              </div>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Bhagavad Katha</h3>
+              <p class="text-tertiary-600 text-center">Customized spiritual solutions and remedial measures for various
+                problems.</p>
+              <div class="mt-6 text-center">
+                <a href="#contact"
+                  class="inline-block px-6 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors">Book
+                  Now</a>
+              </div>
+            </div>
+
+            <!-- Service 12 -->
+            <div
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-secondary-500"
+              style="animation-delay: 1s;">
+              <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">🙏</span>
+              </div>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Shiv Mahapuran</h3>
+              <p class="text-tertiary-600 text-center">Customized spiritual solutions and remedial measures for various
+                problems.</p>
+              <div class="mt-6 text-center">
+                <a href="#contact"
+                  class="inline-block px-6 py-2 bg-secondary-500 text-white rounded-lg hover:bg-secondary-600 transition-colors">Book
+                  Now</a>
+              </div>
+            </div>
+
+            <!-- Service 13 -->
+            <div
+              class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-primary-500"
+              style="animation-delay: 1s;">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span class="text-3xl">🙏</span>
+              </div>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Devi Bhagwat</h3>
+              <p class="text-tertiary-600 text-center">Customized spiritual solutions and remedial measures for various
+                problems.</p>
+              <div class="mt-6 text-center">
+                <a href="#contact"
+                  class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
                   Now</a>
               </div>
             </div>
@@ -863,37 +905,46 @@
 
   <htmlCode>
     <div id="root">
-      <section id="about" class="py-20 bg-tertiary-800 text-white">
+      <section id="about" class="py-20 bg-gradient-to-r from-primary-100 to-accent-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="animate__animated animate__fadeInLeft">
-              <div class="relative">
+              <div class="relative" x-data="imageSlider()">
+                <!-- Image slider container -->
                 <div class="w-full aspect-square rounded-full bg-gradient-to-br from-primary-500 to-accent-500 p-1">
-                  <div class="w-full h-full rounded-full bg-tertiary-700 p-4">
+                  <div class="w-full h-full rounded-full bg-white p-4">
                     <div
-                      class="w-full h-full rounded-full bg-tertiary-800 flex items-center justify-center relative overflow-hidden">
+                      class="w-full h-full rounded-full bg-primary-50 flex items-center justify-center relative overflow-hidden">
                       <div class="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20"></div>
                       <!-- Decorative border pattern -->
                       <div
                         class="absolute inset-0 rounded-full border-4 border-dashed border-primary-500/30 animate-spin-slow">
                       </div>
-                      <div class="text-center z-10 w-full h-full">
-                        <img src="images/drdharma.jpeg" alt="Dr. Dharmanand Thakur"
-                          class="w-full h-full object-cover rounded-full">
+                      <!-- Image slider -->
+                      <div class="relative w-full h-full overflow-hidden rounded-full">
+                        <!-- Images with fade transition -->
+                        <template x-for="(image, index) in images" :key="index">
+                          <div class="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
+                            :class="{ 'opacity-0': currentImage !== index, 'opacity-100': currentImage === index }">
+                            <img :src="image" alt="Dr. Dharmanand Thakur"
+                              class="w-full h-full object-cover rounded-full">
+                          </div>
+                        </template>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary-500 text-tertiary-900 px-6 py-2 rounded-full whitespace-nowrap font-bold">
+                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary-500 text-white px-6 py-2 rounded-full whitespace-nowrap font-bold">
                   27+ Years Experience
                 </div>
               </div>
             </div>
 
+            <!-- Rest of the about section content remains the same -->
             <div class="animate__animated animate__fadeInRight">
-              <h2 class="text-4xl font-bold mb-6 text-primary-500">About Dr. Dharmanand Thakur</h2>
-              <div class="space-y-4 text-primary-100">
+              <h2 class="text-4xl font-bold mb-6 text-tertiary-800">About Dr. Dharmanand Thakur</h2>
+              <div class="space-y-4 text-tertiary-700">
                 <p>Dr. Dharmanand Thakur is a world-renowned astrologer who has received education in astrology from
                   several prominent universities. With 27 years of rich experience, he is known for his deep expertise
                   in the field of astrology. His accurate predictions and consultations have brought positive changes in
@@ -932,7 +983,7 @@
 
                 <div class="pt-6">
                   <a href="#contact"
-                    class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-tertiary-900 font-bold rounded-lg transition-colors">
+                    class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-lg transition-colors">
                     Schedule Consultation
                   </a>
                 </div>
@@ -940,6 +991,32 @@
             </div>
           </div>
         </div>
+
+        <!-- Alpine.js Image Slider Script -->
+        <script>
+          function imageSlider() {
+            return {
+              images: [
+                'images/drdharma.jpeg',  // Original image
+                'images/drthakur2.jpeg', // Add your second image path here
+                'images/drthakur4.jpeg', // Add your third image path here
+                'images/dr5.jpeg',
+                'images/drthakur3.jpeg'
+                // Add more image paths as needed
+              ],
+              currentImage: 0,
+              init() {
+                // Start the slideshow
+                this.startSlideshow();
+              },
+              startSlideshow() {
+                setInterval(() => {
+                  this.currentImage = (this.currentImage + 1) % this.images.length;
+                }, 3000); // Change image every 3 seconds
+              }
+            }
+          }
+        </script>
       </section>
     </div>
   </htmlCode>
@@ -955,21 +1032,21 @@
             <!-- Om Symbol -->
             <path
               d="M500,200 C400,200 350,300 350,400 C350,500 400,550 500,550 C600,550 650,500 650,400 C650,300 600,200 500,200 Z"
-              fill="none" stroke="#8a34d1" stroke-width="5" />
+              fill="none" stroke="#d90000" stroke-width="5" />
             <path
               d="M500,200 C450,200 400,300 400,350 C400,400 450,420 500,420 C550,420 600,400 600,350 C600,300 550,200 500,200 Z"
-              fill="none" stroke="#8a34d1" stroke-width="5" />
+              fill="none" stroke="#d90000" stroke-width="5" />
             <path
               d="M500,550 C400,550 300,600 300,700 C300,800 400,850 500,850 C600,850 700,800 700,700 C700,600 600,550 500,550 Z"
-              fill="none" stroke="#8a34d1" stroke-width="5" />
+              fill="none" stroke="#d90000" stroke-width="5" />
             <!-- Lotus Pattern -->
-            <circle cx="500" cy="500" r="200" fill="none" stroke="#d90000" stroke-width="3" />
-            <path d="M500,300 C550,350 650,350 700,300" fill="none" stroke="#d90000" stroke-width="3" />
-            <path d="M500,300 C450,350 350,350 300,300" fill="none" stroke="#d90000" stroke-width="3" />
-            <path d="M700,500 C650,550 650,650 700,700" fill="none" stroke="#d90000" stroke-width="3" />
-            <path d="M300,500 C350,550 350,650 300,700" fill="none" stroke="#d90000" stroke-width="3" />
-            <path d="M500,700 C550,650 650,650 700,700" fill="none" stroke="#d90000" stroke-width="3" />
-            <path d="M500,700 C450,650 350,650 300,700" fill="none" stroke="#d90000" stroke-width="3" />
+            <circle cx="500" cy="500" r="200" fill="none" stroke="#ffa000" stroke-width="3" />
+            <path d="M500,300 C550,350 650,350 700,300" fill="none" stroke="#ffa000" stroke-width="3" />
+            <path d="M500,300 C450,350 350,350 300,300" fill="none" stroke="#ffa000" stroke-width="3" />
+            <path d="M700,500 C650,550 650,650 700,700" fill="none" stroke="#ffa000" stroke-width="3" />
+            <path d="M300,500 C350,550 350,650 300,700" fill="none" stroke="#ffa000" stroke-width="3" />
+            <path d="M500,700 C550,650 650,650 700,700" fill="none" stroke="#ffa000" stroke-width="3" />
+            <path d="M500,700 C450,650 350,650 300,700" fill="none" stroke="#ffa000" stroke-width="3" />
           </svg>
         </div>
 
@@ -1056,7 +1133,7 @@
 
           <div class="text-center mt-12 animate__animated animate__fadeInUp">
             <a href="#contact"
-              class="inline-block px-8 py-4 bg-primary-500 text-tertiary-900 font-bold rounded-lg hover:bg-primary-600 transition-colors">
+              class="inline-block px-8 py-4 bg-primary-500 text-white font-bold rounded-lg hover:bg-primary-600 transition-colors">
               Transform Your Life Today
             </a>
           </div>
@@ -1069,77 +1146,91 @@
 
   <htmlCode>
     <div id="root">
-      <section id="youtube" class="py-20 bg-tertiary-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="youtube" class="py-20 bg-gradient-to-r from-primary-500 to-accent-500 relative overflow-hidden">
+        <!-- Add some decorative elements -->
+        <div class="absolute inset-0 opacity-10">
+          <div class="w-full h-full">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="youtube-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                <text x="50" y="50" font-family="serif" font-size="40" text-anchor="middle" dominant-baseline="middle"
+                  fill="#FFFFFF">ॐ</text>
+              </pattern>
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#youtube-pattern)" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-primary-500 mb-4">Latest Videos</h2>
-            <div class="w-24 h-1 bg-primary-500 mx-auto"></div>
-            <p class="text-lg text-primary-200 mt-4">Watch our latest astrological insights and predictions</p>
+            <h2 class="text-4xl font-bold text-white mb-4">Latest Videos</h2>
+            <div class="w-24 h-1 bg-white mx-auto"></div>
+            <p class="text-lg text-white mt-4">Watch our latest astrological insights and predictions</p>
           </div>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Video Card 1 -->
             <div
-              class="bg-tertiary-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-2 border-primary-500">
-              <div class="aspect-video bg-tertiary-600 flex items-center justify-center">
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-2 border-primary-500">
+              <div class="aspect-video bg-tertiary-100 flex items-center justify-center">
                 <iframe class="w-full h-full" src="https://www.youtube.com/embed/PfeyFxjAW80?si=mw5SYg9DU1z-u-n9"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="p-6">
-                <h3 class="text-lg font-semibold text-primary-100 mb-2">Holi 2025</h3>
-                <p class="text-primary-200 text-sm mb-4">Learn होली 2025 || होलिका दहन शुभ मुहूर्त समस्त जानकारी || Holi
+                <h3 class="text-lg font-semibold text-tertiary-800 mb-2">Holi 2025</h3>
+                <p class="text-tertiary-600 text-sm mb-4">Learn होली 2025 || होलिका दहन शुभ मुहूर्त समस्त जानकारी ||
+                  Holi
                   kab hai 2025 || holika dahan Shubh muhurat</p>
                 <div class="flex items-center justify-between">
                   <span class="text-primary-500 text-sm">03:34 mins</span>
                   <a href="https://www.youtube.com/embed/PfeyFxjAW80?si=mw5SYg9DU1z-u-n9" target="_blank"
-                    class="text-primary-500 hover:text-primary-400 transition-colors">Watch Now →</a>
+                    class="text-primary-500 hover:text-primary-600 transition-colors">Watch Now →</a>
                 </div>
               </div>
             </div>
 
             <!-- Video Card 2 -->
             <div
-              class="bg-tertiary-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-2 border-accent-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-2 border-accent-500"
               style="animation-delay: 0.2s;">
-              <div class="aspect-video bg-tertiary-600 flex items-center justify-center">
+              <div class="aspect-video bg-tertiary-100 flex items-center justify-center">
                 <iframe class="w-full h-full" src="https://www.youtube.com/embed/yAELlOwI4qo?si=K7wS3A1lDkKZLX0K"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="p-6">
-                <h3 class="text-lg font-semibold text-primary-100 mb-2">March 2025 - Pisces</h3>
-                <p class="text-primary-200 text-sm mb-4">मीन राशि वालों के लिए मार्च 2025 कैसा रहेगा || March 2025 Meen
+                <h3 class="text-lg font-semibold text-tertiary-800 mb-2">March 2025 - Pisces</h3>
+                <p class="text-tertiary-600 text-sm mb-4">मीन राशि वालों के लिए मार्च 2025 कैसा रहेगा || March 2025 Meen
                   (Pisces)</p>
                 <div class="flex items-center justify-between">
                   <span class="text-accent-500 text-sm">02:53 mins</span>
                   <a href="https://www.youtube.com/embed/yAELlOwI4qo?si=K7wS3A1lDkKZLX0K" target="_blank"
-                    class="text-accent-500 hover:text-accent-400 transition-colors">Watch Now →</a>
+                    class="text-accent-500 hover:text-accent-600 transition-colors">Watch Now →</a>
                 </div>
               </div>
             </div>
 
             <!-- Video Card 3 -->
             <div
-              class="bg-tertiary-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-2 border-secondary-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-2 border-secondary-500"
               style="animation-delay: 0.4s;">
-              <div class="aspect-video bg-tertiary-600 flex items-center justify-center">
+              <div class="aspect-video bg-tertiary-100 flex items-center justify-center">
                 <iframe class="w-full h-full" src="https://www.youtube.com/embed/LUbTolIGYVM?si=mGxFTPWRIiDhknjt"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="p-6">
-                <h3 class="text-lg font-semibold text-primary-100 mb-2">March 2025 - Aquarius</h3>
-                <p class="text-primary-200 text-sm mb-4">कुंभ राशि वालों के लिए मार्च 2025 कैसा रहेगा || March 2025
+                <h3 class="text-lg font-semibold text-tertiary-800 mb-2">March 2025 - Aquarius</h3>
+                <p class="text-tertiary-600 text-sm mb-4">कुंभ राशि वालों के लिए मार्च 2025 कैसा रहेगा || March 2025
                   Kumbh
                 </p>
                 <div class="flex items-center justify-between">
                   <span class="text-secondary-500 text-sm">03:04 mins</span>
                   <a href="https://www.youtube.com/embed/LUbTolIGYVM?si=mGxFTPWRIiDhknjt" target="_blank"
-                    class="text-secondary-500 hover:text-secondary-400 transition-colors">Watch Now →</a>
+                    class="text-secondary-500 hover:text-secondary-600 transition-colors">Watch Now →</a>
                 </div>
               </div>
             </div>
@@ -1147,7 +1238,7 @@
 
           <div class="text-center mt-12">
             <a href="https://www.youtube.com/@DrDharmanandThakur/videos" target="_blank"
-              class="inline-flex items-center px-8 py-4 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors animate__animated animate__pulse animate__infinite">
+              class="inline-flex items-center px-8 py-4 bg-white text-primary-600 rounded-lg hover:bg-tertiary-50 transition-colors animate__animated animate__pulse animate__infinite">
               <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
@@ -1164,12 +1255,12 @@
 
   <htmlCode>
     <div id="root">
-      <section id="testimonials" class="py-20 bg-neutral-100">
+      <section id="testimonials" class="py-20 bg-primary-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-neutral-900 mb-4">Client Testimonials</h2>
-            <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
-            <p class="text-lg text-neutral-600 mt-4">Hear from those who have experienced transformation</p>
+            <h2 class="text-4xl font-bold text-tertiary-800 mb-4">Client Testimonials</h2>
+            <div class="w-24 h-1 bg-primary-500 mx-auto"></div>
+            <p class="text-lg text-tertiary-600 mt-4">Hear from those who have experienced transformation</p>
           </div>
 
           <div class="relative" x-data="testimonialSlider()">
@@ -1177,48 +1268,50 @@
               <div class="flex transition-transform duration-500 ease-in-out"
                 :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
                 <div class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white rounded-xl p-8 shadow-lg">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-primary-500">
                     <div class="flex items-center mb-6">
-                      <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <!-- <span class="text-2xl">👨</span> -->
-                        <img class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0"
-                          src="images/mukul.jpeg" alt="shalini">
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
+                          src="images/mukul.jpeg" alt="Mukul Dev">
                       </div>
                       <div class="ml-4">
-                        <h3 class="text-xl font-semibold text-neutral-900">Mukul Dev</h3>
-                        <p class="text-neutral-600">Actor</p>
+                        <h3 class="text-xl font-semibold text-tertiary-800">Mukul Dev</h3>
+                        <p class="text-tertiary-600">Actor</p>
                       </div>
                     </div>
-                    <p class="text-neutral-700 mb-4">"Pandit Dharmananda Thakur, as i affectionately call him Panditji
+                    <p class="text-tertiary-700 mb-4">"Pandit Dharmananda Thakur, as i affectionately call him Panditji
                       or Srikant has been a mentor and a guide to my entire family for more than two decades. He was
                       introduced to my family by my late mother. Raised in Madhubani (Bihar), Panditji is a triple MA,
                       B, Ed and PHD in astrology (Sanskrit) and his predictions/suggestions are invaluable at various
                       levels. A rare quality in him is his command over Sanskrit and his in-depth knowledge about the
                       Hindu scriptures. I wish him the very best in this new endeavour."</p>
-                    <div class="flex text-orange-500">
+                    <div class="flex text-primary-500">
                       <span>★★★★★</span>
                     </div>
                   </div>
                 </div>
+
                 <!-- Testimonial 1 -->
                 <div class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white rounded-xl p-8 shadow-lg">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-accent-500">
                     <div class="flex items-center mb-6">
-                      <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <!-- <span class="text-2xl">👨</span> -->
-                        <img class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0"
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
                           src="images/shalini.jpeg" alt="shalini">
                       </div>
                       <div class="ml-4">
-                        <h3 class="text-xl font-semibold text-neutral-900">Shalini Sharma</h3>
-                        <p class="text-neutral-600">Working in MNC, England</p>
+                        <h3 class="text-xl font-semibold text-tertiary-800">Shalini Sharma</h3>
+                        <p class="text-tertiary-600">Working in MNC, England</p>
                       </div>
                     </div>
-                    <p class="text-neutral-700 mb-4">"Our sincere thanks for your meaningful contribution and support in
+                    <p class="text-tertiary-700 mb-4">"Our sincere thanks for your meaningful contribution and support
+                      in
                       our life your knowledge in astrology change our world 🌍 Thank you for the invaluable role you
                       played; it is deeply appreciated. We appreciate your kindness more than words can express. Your
                       thoughtfulness and generosity empower us."</p>
-                    <div class="flex text-orange-500">
+                    <div class="flex text-accent-500">
                       <span>★★★★★</span>
                     </div>
                   </div>
@@ -1226,25 +1319,27 @@
 
                 <!-- Testimonial 2 -->
                 <div class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white rounded-xl p-8 shadow-lg">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-secondary-500">
                     <div class="flex items-center mb-6">
-                      <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div
+                        class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <!-- <span class="text-2xl">👩</span> -->
-                        <img class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0"
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
                           src="images/rohit.jpeg" alt="rohit">
                       </div>
                       <div class="ml-4">
-                        <h3 class="text-xl font-semibold text-neutral-900">Rohit Asthana</h3>
-                        <p class="text-neutral-600">IT Professional</p>
+                        <h3 class="text-xl font-semibold text-tertiary-800">Rohit Asthana</h3>
+                        <p class="text-tertiary-600">IT Professional</p>
                       </div>
                     </div>
-                    <p class="text-neutral-700 mb-4">"I highly recommend Dr. Dharmanand (Shrikant) Thakur for insightful
+                    <p class="text-tertiary-700 mb-4">"I highly recommend Dr. Dharmanand (Shrikant) Thakur for
+                      insightful
                       and accurate astrological guidance. With deep expertise and a personalized approach, he provides a
                       clear and practical advice on career, relationships, and personal growth.
                       What sets him apart is his ability to simplify complex astrological concepts while offering
                       compassionate, meaningful insights. If you're seeking a trusted astrologer for clarity and
                       direction, Dr. Dharmanand (Shrikant) Thakur is an excellent choice. Please consult him."</p>
-                    <div class="flex text-orange-500">
+                    <div class="flex text-secondary-500">
                       <span>★★★★★</span>
                     </div>
                   </div>
@@ -1252,65 +1347,125 @@
 
                 <!-- Testimonial 3 -->
                 <div class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white rounded-xl p-8 shadow-lg">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-primary-500">
                     <div class="flex items-center mb-6">
-                      <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <!-- <span class="text-2xl">👩</span> -->
-                        <img class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0"
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
                           src="images/maithili.jpeg" alt="maithili">
                       </div>
                       <div class="ml-4">
-                        <h3 class="text-xl font-semibold text-neutral-900">डॉ मैथिली कुमारी</h3>
-                        <p class="text-neutral-600">सहायक प्राध्यापिका ज्योतिष</p>
+                        <h3 class="text-xl font-semibold text-tertiary-800">डॉ मैथिली कुमारी</h3>
+                        <p class="text-tertiary-600">सहायक प्राध्यापिका ज्योतिष</p>
                       </div>
                     </div>
-                    <p class="text-neutral-700 mb-4">"परम पूज्यवर गुरु जी आपके चरणों में कोटि कोटि प्रणाम।आप मुझे पढ़ाने
+                    <p class="text-tertiary-700 mb-4">"परम पूज्यवर गुरु जी आपके चरणों में कोटि कोटि प्रणाम।आप मुझे
+                      पढ़ाने
                       के साथ साथ सतत् मार्गदर्शन भी करते हैं, आपके प्रशस्त मार्गदर्शन में मैं जो भी काम करती हूं जैसे
                       बच्चे को कब रत्न धारण करवाना चाहिए, ग्रहों की शान्ति, सूर्य, मंगल ग्रह की उपासना, अध्यात्म से
                       जुड़ना आदि अनेक उपायों से बहुत ही लाभ मिला है। मैं जब भी परेशानी में रहती हूं तब आपका ज्योतिषीय
                       विश्लेषण और सुझाव बहुत ही लाभकारी होता है।आप को हार्दिक आभार,आप अपनी कृपा दृष्टि ऐसे ही बनाए
                       रखिये।👏👏 "</p>
-                    <div class="flex text-orange-500">
+                    <div class="flex text-primary-500">
                       <span>★★★★★</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white rounded-xl p-8 shadow-lg">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-accent-500">
                     <div class="flex items-center mb-6">
-                      <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <!-- <span class="text-2xl">👩</span> -->
-                        <img class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0"
-                          src="images/bhupinder.jpeg" alt="maithili">
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
+                          src="images/bhupinder.jpeg" alt="Bhupinder Singh">
                       </div>
                       <div class="ml-4">
-                        <h3 class="text-xl font-semibold text-neutral-900">Bhupinder Singh</h3>
-                        <p class="text-neutral-600">Businessman</p>
+                        <h3 class="text-xl font-semibold text-tertiary-800">Bhupinder Singh</h3>
+                        <p class="text-tertiary-600">Businessman</p>
                       </div>
                     </div>
-                    <p class="text-neutral-700 mb-4">"Dr. Dharmanand is truly one of a kind Astrologer where his
+                    <p class="text-tertiary-700 mb-4">"Dr. Dharmanand is truly one of a kind Astrologer where his
                       guidance has helped me tremendously. I've dealt with a few other Astrologers and what sets Dr.
                       Dharmanand apart is is true honesty and his knowledge. I am blessed to not only call him as my
                       Astrologer but as a true friend and mentor also."</p>
-                    <div class="flex text-orange-500">
+                    <div class="flex text-accent-500">
                       <span>★★★★★</span>
                     </div>
                   </div>
                 </div>
+
+                <div class="w-full flex-shrink-0 px-4">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-primary-500">
+                    <div class="flex items-center mb-6">
+                      <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <!-- <span class="text-2xl">👩</span> -->
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
+                          src="images/nair.jpeg" alt="leela nair">
+                      </div>
+                      <div class="ml-4">
+                        <h3 class="text-xl font-semibold text-tertiary-800">Leela Nair</h3>
+                        <p class="text-tertiary-600">Banking Professional Adelaide, Australia</p>
+                      </div>
+                    </div>
+                    <p class="text-tertiary-700 mb-4">“I have been consulting Dr. Dharmanand Thakur Ji from the past 10
+                      years for career and financial guidance, and I must say his predictions have always been
+                      incredibly accurate. He is not just an astrologer but a true guide who genuinely cares for people.
+                      What sets him apart is his humility and honesty—he treats you like family, not just a client.
+
+                      Beyond astrology, he helps you connect with God and understand the spiritual aspect of life.
+                      Unlike many others, he is not after money; his focus is purely on helping and guiding people on
+                      the right path. If you are looking for someone who combines deep astrological knowledge with a
+                      pure heart, I highly recommend Dharmanand Thakur Ji. "</p>
+                    <div class="flex text-primary-500">
+                      <span>★★★★★</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex-shrink-0 px-4">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-accent-500">
+                    <div class="flex items-center mb-6">
+                      <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <!-- <span class="text-2xl">👩</span> -->
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
+                          src="images/vijay.jpeg" alt="Bhupinder Singh">
+                      </div>
+                      <div class="ml-4">
+                        <h3 class="text-xl font-semibold text-tertiary-800">Vijay Kumar Bhatt</h3>
+                        <p class="text-tertiary-600">Computer Science Engineer</p>
+                      </div>
+                    </div>
+                    <p class="text-tertiary-700 mb-4">"Dr. Dharmanand Thakur, your exceptional astrological expertise
+                      has been a blessing in my life. Your accurate predictions and insightful guidance have helped me
+                      make informed decisions and navigate life's challenges with confidence.
+
+                      Respected Dr. Thakur, your dedication to the field of astrology is truly commendable. Your ability
+                      to decipher the mysteries of the universe and provide practical advice has been invaluable to me.
+                      Thank you for sharing your knowledge and wisdom.
+
+                      Dr. Dharmanand Thakur, you are a shining star in the realm of astrology! Your Vedic wisdom,
+                      combined with modern insight, has helped me understand myself and my place in the world. I'm
+                      forever grateful for your guidance and support."</p>
+                    <div class="flex text-accent-500">
+                      <span>★★★★★</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
             <!-- Navigation Buttons -->
             <button @click="prevSlide"
-              class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 focus:outline-none hover:bg-orange-600 transition-colors">
+              class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-primary-500 text-white rounded-full p-2 focus:outline-none hover:bg-primary-600 transition-colors">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
               </svg>
             </button>
 
             <button @click="nextSlide"
-              class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 focus:outline-none hover:bg-orange-600 transition-colors">
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary-500 text-white rounded-full p-2 focus:outline-none hover:bg-primary-600 transition-colors">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
               </svg>
@@ -1318,16 +1473,20 @@
 
             <!-- Dots -->
             <div class="flex justify-center mt-8 space-x-2">
-              <button @click="goToSlide(0)" :class="{'bg-orange-500': currentSlide === 0}"
-                class="w-3 h-3 rounded-full bg-orange-200"></button>
-              <button @click="goToSlide(1)" :class="{'bg-orange-500': currentSlide === 1}"
-                class="w-3 h-3 rounded-full bg-orange-200"></button>
-              <button @click="goToSlide(2)" :class="{'bg-orange-500': currentSlide === 2}"
-                class="w-3 h-3 rounded-full bg-orange-200"></button>
-              <button @click="goToSlide(3)" :class="{'bg-orange-500': currentSlide === 3}"
-                class="w-3 h-3 rounded-full bg-orange-200"></button>
-              <button @click="goToSlide(4)" :class="{'bg-orange-500': currentSlide === 4}"
-                class="w-3 h-3 rounded-full bg-orange-200"></button>
+              <button @click="goToSlide(0)" :class="{'bg-primary-500': currentSlide === 0}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(1)" :class="{'bg-primary-500': currentSlide === 1}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(2)" :class="{'bg-primary-500': currentSlide === 2}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(3)" :class="{'bg-primary-500': currentSlide === 3}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(4)" :class="{'bg-primary-500': currentSlide === 4}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(5)" :class="{'bg-primary-500': currentSlide === 5}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(6)" :class="{'bg-primary-500': currentSlide === 6}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
             </div>
           </div>
         </div>
@@ -1337,7 +1496,7 @@
         function testimonialSlider() {
           return {
             currentSlide: 0,
-            totalSlides: 5,
+            totalSlides: 7,
 
             nextSlide() {
               this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
@@ -1360,9 +1519,10 @@
 
   <htmlCode>
     <div id="root">
-      <section id="zodiac" class="py-20 bg-tertiary-800 relative overflow-hidden">
+      <section id="zodiac"
+        class="py-20 bg-gradient-to-br from-primary-500 via-accent-500 to-primary-400 relative overflow-hidden">
         <!-- Decorative background with stars -->
-        <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 opacity-15">
           <div class="stars-container w-full h-full">
             <!-- Generated stars -->
             <div class="star" style="top: 5%; left: 10%; width: 2px; height: 2px;"></div>
@@ -1390,55 +1550,52 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-primary-500 mb-4">2025 Zodiac Predictions</h2>
-            <div class="w-24 h-1 bg-primary-500 mx-auto"></div>
-            <p class="text-lg text-primary-200 mt-4">Discover what the stars hold for you in 2025</p>
+            <h2 class="text-4xl font-bold text-white mb-4">2025 Zodiac Predictions</h2>
+            <div class="w-24 h-1 bg-white mx-auto"></div>
+            <p class="text-lg text-white/80 mt-4">Discover what the stars hold for you in 2025</p>
           </div>
 
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Aries -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-primary-500/20">
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-primary-500">
               <div class="text-4xl mb-4 text-center text-primary-500">♈</div>
-              <h3 class="text-xl font-bold text-primary-400 mb-2 text-center">Aries</h3>
-              <p class="text-primary-100 text-sm text-center">In the year 2025, there will be some upheaval in the
-                state.
-                There will be more travelling. Travel will be beneficial. Auspicious works will also be accomplished. It
-                will be good to worship Hanuman ji and read Hanuman Chalisa.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Aries</h3>
+              <p class="text-tertiary-700 text-sm text-center">In the year 2025, there will be some upheaval in the
+                state. There will be more travelling. Travel will be beneficial. Auspicious works will also be
+                accomplished. It will be good to worship Hanuman ji and read Hanuman Chalisa.</p>
             </div>
 
             <!-- Taurus -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-accent-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-accent-500"
               style="animation-delay: 0.1s;">
               <div class="text-4xl mb-4 text-center text-accent-500">♉</div>
-              <h3 class="text-xl font-bold text-accent-400 mb-2 text-center">Taurus</h3>
-              <p class="text-primary-100 text-sm text-center">There will be good profits in the year 2025. The economic
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Taurus</h3>
+              <p class="text-tertiary-700 text-sm text-center">There will be good profits in the year 2025. The economic
                 sector will be quite strong. In this year you can acquire land, house, car. Businessmen will get a lot
                 of profit in business. It will be best to worship Durga Ji and take the path of Durga Kavach.</p>
             </div>
 
             <!-- Gemini -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-secondary-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-secondary-500"
               style="animation-delay: 0.2s;">
               <div class="text-4xl mb-4 text-center text-secondary-500">♊</div>
-              <h3 class="text-xl font-bold text-secondary-400 mb-2 text-center">Gemini</h3>
-              <p class="text-primary-100 text-sm text-center">This year in 2025, there is a slight lack of
-                self-confidence.
-                Pay attention to this, do not worry. Time will gradually improve, mental happiness will increase.
-                Mother's health will improve. There will be benefits in work and business. Worshiping Shree Ganesh Ji
-                and offering Shree Ganesh Atharv Shirsh will be beneficial.
-              </p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Gemini</h3>
+              <p class="text-tertiary-700 text-sm text-center">This year in 2025, there is a slight lack of
+                self-confidence. Pay attention to this, do not worry. Time will gradually improve, mental happiness will
+                increase. Mother's health will improve. There will be benefits in work and business. Worshiping Shree
+                Ganesh Ji and offering Shree Ganesh Atharv Shirsh will be beneficial.</p>
             </div>
 
             <!-- Cancer -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-primary-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-primary-500"
               style="animation-delay: 0.3s;">
               <div class="text-4xl mb-4 text-center text-primary-500">♋</div>
-              <h3 class="text-xl font-bold text-primary-400 mb-2 text-center">Cancer</h3>
-              <p class="text-primary-100 text-sm text-center">You will have to pay more attention towards health and
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Cancer</h3>
+              <p class="text-tertiary-700 text-sm text-center">You will have to pay more attention towards health and
                 career. You will have to take care of your life partner. You will benefit by following the advice given
                 by your life partner. There will be financial problems in the beginning of the year. Financial gains
                 will be good later. It will be auspicious to worship Shiv and walk on the Shiv Panchakshar Strot.</p>
@@ -1446,105 +1603,100 @@
 
             <!-- Leo -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-accent-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-accent-500"
               style="animation-delay: 0.4s;">
               <div class="text-4xl mb-4 text-center text-accent-500">♌</div>
-              <h3 class="text-xl font-bold text-accent-400 mb-2 text-center">Leo</h3>
-              <p class="text-primary-100 text-sm text-center">There will be many plans in 2025, but I will be worried
-                about
-                some things. Proceed with caution, stay patient. There will be a lot of benefits in the year 2025. It
-                will be auspicious to worship Surya regularly.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Leo</h3>
+              <p class="text-tertiary-700 text-sm text-center">There will be many plans in 2025, but I will be worried
+                about some things. Proceed with caution, stay patient. There will be a lot of benefits in the year 2025.
+                It will be auspicious to worship Surya regularly.</p>
             </div>
 
             <!-- Virgo -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-secondary-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-secondary-500"
               style="animation-delay: 0.5s;">
               <div class="text-4xl mb-4 text-center text-secondary-500">♍</div>
-              <h3 class="text-xl font-bold text-secondary-400 mb-2 text-center">Virgo</h3>
-              <p class="text-primary-100 text-sm text-center">This year your mind will be quite happy. Take special care
-                of
-                your health this year. You will be quite profitable in business or job. You will get happiness and
-                support from your father. You will be successful in educational work. Your lifestyle will be a little
-                unstable this year. Offer Ganesha's aarti and Hanuman Chalisa with devotion, it will be auspicious.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Virgo</h3>
+              <p class="text-tertiary-700 text-sm text-center">This year your mind will be quite happy. Take special
+                care of your health this year. You will be quite profitable in business or job. You will get happiness
+                and support from your father. You will be successful in educational work. Your lifestyle will be a
+                little unstable this year. Offer Ganesha's aarti and Hanuman Chalisa with devotion, it will be
+                auspicious.</p>
             </div>
 
             <!-- Libra -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-primary-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-primary-500"
               style="animation-delay: 0.6s;">
               <div class="text-4xl mb-4 text-center text-primary-500">♎</div>
-              <h3 class="text-xl font-bold text-primary-400 mb-2 text-center">Libra</h3>
-              <p class="text-primary-100 text-sm text-center">The year 2025 will give you the best benefits in business.
-                Some enemies will be growing. Proceed with caution. The year will be auspicious for children, education,
-                job and etc. Worshiping Durga Ji and carrying Durga Kawach will be especially beneficial.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Libra</h3>
+              <p class="text-tertiary-700 text-sm text-center">The year 2025 will give you the best benefits in
+                business. Some enemies will be growing. Proceed with caution. The year will be auspicious for children,
+                education, job and etc. Worshiping Durga Ji and carrying Durga Kawach will be especially beneficial.</p>
             </div>
 
             <!-- Scorpio -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-accent-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-accent-500"
               style="animation-delay: 0.7s;">
               <div class="text-4xl mb-4 text-center text-accent-500">♏</div>
-              <h3 class="text-xl font-bold text-accent-400 mb-2 text-center">Scorpio</h3>
-              <p class="text-primary-100 text-sm text-center">The year 2025 will strengthen you in the economic sector.
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Scorpio</h3>
+              <p class="text-tertiary-700 text-sm text-center">The year 2025 will strengthen you in the economic sector.
                 Players will also get good success. Control your anger. You will gain from abroad. It will be best to
                 worship Lord Hanuman and offer Sundarkand.</p>
             </div>
 
             <!-- Sagittarius -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-secondary-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-secondary-500"
               style="animation-delay: 0.8s;">
               <div class="text-4xl mb-4 text-center text-secondary-500">♐</div>
-              <h3 class="text-xl font-bold text-secondary-400 mb-2 text-center">Sagittarius</h3>
-              <p class="text-primary-100 text-sm text-center">The year 2025 is a year of change. A lot of new things
-                will
-                happen. There will be conflict in the beginning but everything will be good in the end. Sit in harmony
-                and move forward. Pay attention to relationships. Increase your patience. It will be auspicious to move
-                ahead. Worship Shree Sitaram ji.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Sagittarius</h3>
+              <p class="text-tertiary-700 text-sm text-center">The year 2025 is a year of change. A lot of new things
+                will happen. There will be conflict in the beginning but everything will be good in the end. Sit in
+                harmony and move forward. Pay attention to relationships. Increase your patience. It will be auspicious
+                to move ahead. Worship Shree Sitaram ji.</p>
             </div>
 
             <!-- Capricorn -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-primary-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-primary-500"
               style="animation-delay: 0.9s;">
               <div class="text-4xl mb-4 text-center text-primary-500">♑</div>
-              <h3 class="text-xl font-bold text-primary-400 mb-2 text-center">Capricorn</h3>
-              <p class="text-primary-100 text-sm text-center">You will be very happy in the beginning of the year. You
-                will
-                get respect in education and intellectual work. There will be profit in business. Control your anger. It
-                will be good to read Hanuman Chalisa daily.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Capricorn</h3>
+              <p class="text-tertiary-700 text-sm text-center">You will be very happy in the beginning of the year. You
+                will get respect in education and intellectual work. There will be profit in business. Control your
+                anger. It will be good to read Hanuman Chalisa daily.</p>
             </div>
 
             <!-- Aquarius -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-accent-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-accent-500"
               style="animation-delay: 1s;">
               <div class="text-4xl mb-4 text-center text-accent-500">♒</div>
-              <h3 class="text-xl font-bold text-accent-400 mb-2 text-center">Aquarius</h3>
-              <p class="text-primary-100 text-sm text-center">The year 2025 will be full of self-confidence. There will
-                be
-                opportunities for growth in the job. Maintain relationships with patience. You will have to move ahead
-                with a little concentration. You will benefit from worshipping Maa Kali and Hanuman ji and offering
-                Hanuman Chalisa and Durga.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Aquarius</h3>
+              <p class="text-tertiary-700 text-sm text-center">The year 2025 will be full of self-confidence. There will
+                be opportunities for growth in the job. Maintain relationships with patience. You will have to move
+                ahead with a little concentration. You will benefit from worshipping Maa Kali and Hanuman ji and
+                offering Hanuman Chalisa and Durga.</p>
             </div>
 
             <!-- Pisces -->
             <div
-              class="bg-tertiary-700 rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border border-secondary-500/20"
+              class="bg-white rounded-xl p-6 hover:translate-y-[-5px] hover:shadow-lg hover:shadow-secondary-500/20 transition-all duration-300 cursor-pointer animate__animated animate__fadeInUp border-t-4 border-secondary-500"
               style="animation-delay: 1.1s;">
               <div class="text-4xl mb-4 text-center text-secondary-500">♓</div>
-              <h3 class="text-xl font-bold text-secondary-400 mb-2 text-center">Pisces</h3>
-              <p class="text-primary-100 text-sm text-center">Move carefully in the year 2025. We will think about
-                change
-                this year. Take the right decision seriously. You will have to work hard. Worshiping Lord Vishnu and
-                Hanuman and reading Hanuman Chalisa and Sundarkaand will be beneficial.</p>
+              <h3 class="text-xl font-bold text-tertiary-800 mb-2 text-center">Pisces</h3>
+              <p class="text-tertiary-700 text-sm text-center">Move carefully in the year 2025. We will think about
+                change this year. Take the right decision seriously. You will have to work hard. Worshiping Lord Vishnu
+                and Hanuman and reading Hanuman Chalisa and Sundarkaand will be beneficial.</p>
             </div>
           </div>
 
           <div class="text-center mt-12">
             <a href="#contact"
-              class="inline-block px-8 py-4 bg-primary-500 text-tertiary-900 font-bold rounded-lg hover:bg-primary-600 transition-colors animate__animated animate__pulse animate__infinite">
+              class="inline-block px-8 py-4 bg-white text-primary-600 font-bold rounded-lg hover:bg-tertiary-50 transition-colors animate__animated animate__pulse animate__infinite">
               Get Detailed Prediction
             </a>
           </div>
@@ -1561,7 +1713,7 @@
 
           .star {
             position: absolute;
-            background-color: #ffa000;
+            background-color: #FFFFFF;
             border-radius: 50%;
             animation: twinkle 4s infinite;
           }
@@ -1684,67 +1836,68 @@
 
   <htmlCode>
     <div id="root">
-      <section id="contact" class="py-20 bg-tertiary-800 relative overflow-hidden">
-        <!-- Decorative Background Pattern - keeping this as you liked it -->
-        <div class="absolute inset-0 opacity-5">
+      <section id="contact" class="py-20 bg-gradient-to-br from-primary-100 to-accent-100 relative overflow-hidden">
+        <!-- Decorative Background Pattern with warm colors -->
+        <div class="absolute inset-0 opacity-10">
           <div class="w-full h-full">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
               <!-- Traditional Indian pattern -->
               <pattern id="rangoli" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <circle cx="50" cy="50" r="40" stroke="#ffa000" stroke-width="1" fill="none"/>
-                <circle cx="50" cy="50" r="30" stroke="#ffa000" stroke-width="1" fill="none"/>
-                <circle cx="50" cy="50" r="20" stroke="#ffa000" stroke-width="1" fill="none"/>
-                <path d="M10,50 L90,50" stroke="#ffa000" stroke-width="1"/>
-                <path d="M50,10 L50,90" stroke="#ffa000" stroke-width="1"/>
-                <path d="M25,25 L75,75" stroke="#ffa000" stroke-width="1"/>
-                <path d="M25,75 L75,25" stroke="#ffa000" stroke-width="1"/>
+                <circle cx="50" cy="50" r="40" stroke="#d90000" stroke-width="1" fill="none" />
+                <circle cx="50" cy="50" r="30" stroke="#d90000" stroke-width="1" fill="none" />
+                <circle cx="50" cy="50" r="20" stroke="#d90000" stroke-width="1" fill="none" />
+                <path d="M10,50 L90,50" stroke="#d90000" stroke-width="1" />
+                <path d="M50,10 L50,90" stroke="#d90000" stroke-width="1" />
+                <path d="M25,25 L75,75" stroke="#d90000" stroke-width="1" />
+                <path d="M25,75 L75,25" stroke="#d90000" stroke-width="1" />
                 <!-- Decorative flower shapes -->
-                <path d="M50,10 Q60,20 50,30 Q40,20 50,10" stroke="#ffa000" stroke-width="1" fill="none"/>
-                <path d="M50,70 Q60,80 50,90 Q40,80 50,70" stroke="#ffa000" stroke-width="1" fill="none"/>
-                <path d="M10,50 Q20,60 30,50 Q20,40 10,50" stroke="#ffa000" stroke-width="1" fill="none"/>
-                <path d="M70,50 Q80,60 90,50 Q80,40 70,50" stroke="#ffa000" stroke-width="1" fill="none"/>
+                <path d="M50,10 Q60,20 50,30 Q40,20 50,10" stroke="#d90000" stroke-width="1" fill="none" />
+                <path d="M50,70 Q60,80 50,90 Q40,80 50,70" stroke="#d90000" stroke-width="1" fill="none" />
+                <path d="M10,50 Q20,60 30,50 Q20,40 10,50" stroke="#d90000" stroke-width="1" fill="none" />
+                <path d="M70,50 Q80,60 90,50 Q80,40 70,50" stroke="#d90000" stroke-width="1" fill="none" />
               </pattern>
-              <rect x="0" y="0" width="100%" height="100%" fill="url(#rangoli)"/>
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#rangoli)" />
             </svg>
           </div>
         </div>
-      
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-primary-500 mb-4">Contact Us</h2>
-            <div class="w-24 h-1 bg-primary-500 mx-auto"></div>
-            <p class="text-lg text-primary-100 mt-4">Begin your journey towards spiritual enlightenment</p>
+            <h2 class="text-4xl font-bold text-tertiary-800 mb-4">Contact Us</h2>
+            <div class="w-24 h-1 bg-accent-500 mx-auto"></div>
+            <p class="text-lg text-tertiary-700 mt-4">Begin your journey towards spiritual enlightenment</p>
           </div>
-      
+
           <div class="grid md:grid-cols-2 gap-12">
             <!-- Contact Form -->
-            <div class="bg-tertiary-700 p-8 rounded-xl animate__animated animate__fadeInLeft border border-primary-500/20">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg animate__animated animate__fadeInLeft border border-primary-500/20">
               <form id="contactForm" class="space-y-6">
                 <div>
-                  <label for="name" class="block text-primary-100 mb-2">Full Name</label>
+                  <label for="name" class="block text-tertiary-700 mb-2">Full Name</label>
                   <input type="text" id="name" name="name"
-                    class="w-full px-4 py-3 rounded-lg bg-tertiary-600 border border-tertiary-500 text-white focus:outline-none focus:border-primary-500 transition-colors"
+                    class="w-full px-4 py-3 rounded-lg bg-primary-50 border border-primary-200 text-tertiary-800 focus:outline-none focus:border-primary-500 transition-colors"
                     required>
                 </div>
-      
+
                 <div>
-                  <label for="email" class="block text-primary-100 mb-2">Email Address</label>
+                  <label for="email" class="block text-tertiary-700 mb-2">Email Address</label>
                   <input type="email" id="email" name="email"
-                    class="w-full px-4 py-3 rounded-lg bg-tertiary-600 border border-tertiary-500 text-white focus:outline-none focus:border-primary-500 transition-colors"
+                    class="w-full px-4 py-3 rounded-lg bg-primary-50 border border-primary-200 text-tertiary-800 focus:outline-none focus:border-primary-500 transition-colors"
                     required>
                 </div>
-      
+
                 <div>
-                  <label for="phone" class="block text-primary-100 mb-2">Phone Number</label>
+                  <label for="phone" class="block text-tertiary-700 mb-2">Phone Number</label>
                   <input type="tel" id="phone" name="phone"
-                    class="w-full px-4 py-3 rounded-lg bg-tertiary-600 border border-tertiary-500 text-white focus:outline-none focus:border-primary-500 transition-colors"
+                    class="w-full px-4 py-3 rounded-lg bg-primary-50 border border-primary-200 text-tertiary-800 focus:outline-none focus:border-primary-500 transition-colors"
                     required>
                 </div>
-      
+
                 <div>
-                  <label for="service" class="block text-primary-100 mb-2">Service Required</label>
+                  <label for="service" class="block text-tertiary-700 mb-2">Service Required</label>
                   <select id="service" name="service"
-                    class="w-full px-4 py-3 rounded-lg bg-tertiary-600 border border-tertiary-500 text-white focus:outline-none focus:border-primary-500 transition-colors"
+                    class="w-full px-4 py-3 rounded-lg bg-primary-50 border border-primary-200 text-tertiary-800 focus:outline-none focus:border-primary-500 transition-colors"
                     required>
                     <option value="">Select a service</option>
                     <option value="birth-chart">Birth Chart Analysis</option>
@@ -1755,44 +1908,45 @@
                     <option value="puja">Puja & Remedies</option>
                   </select>
                 </div>
-      
+
                 <div>
-                  <label for="message" class="block text-primary-100 mb-2">Message</label>
+                  <label for="message" class="block text-tertiary-700 mb-2">Message</label>
                   <textarea id="message" name="message" rows="4"
-                    class="w-full px-4 py-3 rounded-lg bg-tertiary-600 border border-tertiary-500 text-white focus:outline-none focus:border-primary-500 transition-colors"
+                    class="w-full px-4 py-3 rounded-lg bg-primary-50 border border-primary-200 text-tertiary-800 focus:outline-none focus:border-primary-500 transition-colors"
                     required></textarea>
                 </div>
-      
+
                 <button type="submit"
-                  class="w-full px-6 py-4 bg-primary-500 text-tertiary-900 font-bold rounded-lg hover:bg-primary-600 transition-colors">
+                  class="w-full px-6 py-4 bg-primary-500 text-white font-bold rounded-lg hover:bg-primary-600 transition-colors">
                   Send Message
                 </button>
               </form>
             </div>
-      
+
             <!-- Contact Information -->
             <div class="space-y-8 animate__animated animate__fadeInRight">
-              <div class="bg-tertiary-700 p-8 rounded-xl border border-tertiary-600">
-                <h3 class="text-2xl font-bold text-primary-500 mb-6">Get in Touch</h3>
-      
+              <div class="bg-white p-8 rounded-xl shadow-lg border border-accent-500/20">
+                <h3 class="text-2xl font-bold text-tertiary-800 mb-6">Get in Touch</h3>
+
                 <div class="space-y-4">
-                  <div class="flex items-center text-primary-100">
+                  <div class="flex items-center text-tertiary-700">
                     <svg class="w-6 h-6 text-primary-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                     <span>+91 9899876127</span>
                   </div>
-      
-                  <div class="flex items-center text-primary-100">
+
+                  <div class="flex items-center text-tertiary-700">
                     <svg class="w-6 h-6 text-primary-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <a href="mailto:dharmanand.shrikant@gmail.com" class="hover:text-primary-500 transition-colors">dharmanand.shrikant@gmail.com</a>
+                    <a href="mailto:dharmanand.shrikant@gmail.com"
+                      class="hover:text-primary-500 transition-colors">dharmanand.shrikant@gmail.com</a>
                   </div>
-      
-                  <div class="flex items-center text-primary-100">
+
+                  <div class="flex items-center text-tertiary-700">
                     <svg class="w-6 h-6 text-primary-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -1803,67 +1957,67 @@
                   </div>
                 </div>
               </div>
-      
-              <div class="bg-tertiary-700 p-8 rounded-xl border border-tertiary-600">
-                <h3 class="text-2xl font-bold text-primary-500 mb-6">Follow Us</h3>
+
+              <div class="bg-white p-8 rounded-xl shadow-lg border border-accent-500/20">
+                <h3 class="text-2xl font-bold text-tertiary-800 mb-6">Follow Us</h3>
                 <div class="flex space-x-4">
-                  <a href="https://x.com/dharmanandthak1" target="_blank" 
-                    class="bg-tertiary-600 p-3 rounded-full hover:bg-primary-500 hover:text-tertiary-900 transition-colors">
-                    <svg class="w-6 h-6 text-primary-100" fill="currentColor" viewBox="0 0 24 24">
+                  <a href="https://x.com/dharmanandthak1" target="_blank"
+                    class="bg-primary-100 p-3 rounded-full hover:bg-primary-500 hover:text-white transition-colors">
+                    <svg class="w-6 h-6 text-primary-500 hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path
                         d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                     </svg>
                   </a>
-                  <a href="https://www.facebook.com/drdharmanandastro/" target="_blank" 
-                    class="bg-tertiary-600 p-3 rounded-full hover:bg-primary-500 hover:text-tertiary-900 transition-colors">
-                    <svg class="w-6 h-6 text-primary-100" fill="currentColor" viewBox="0 0 24 24">
+                  <a href="https://www.facebook.com/drdharmanandastro/" target="_blank"
+                    class="bg-primary-100 p-3 rounded-full hover:bg-primary-500 hover:text-white transition-colors">
+                    <svg class="w-6 h-6 text-primary-500 hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path
                         d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                     </svg>
                   </a>
-                  <a href="https://www.instagram.com/drdharmanandastro/?hl=en" target="_blank" 
-                    class="bg-tertiary-600 p-3 rounded-full hover:bg-primary-500 hover:text-tertiary-900 transition-colors">
-                    <svg class="w-6 h-6 text-primary-100" fill="currentColor" viewBox="0 0 24 24">
+                  <a href="https://www.instagram.com/drdharmanandastro/?hl=en" target="_blank"
+                    class="bg-primary-100 p-3 rounded-full hover:bg-primary-500 hover:text-white transition-colors">
+                    <svg class="w-6 h-6 text-primary-500 hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path
                         d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                     </svg>
                   </a>
-                  <a href="https://www.youtube.com/channel/UCMLiJqgqVMG3frZtT5HYwMQ" target="_blank" 
-                    class="bg-tertiary-600 p-3 rounded-full hover:bg-primary-500 hover:text-tertiary-900 transition-colors">
-                    <svg class="w-6 h-6 text-primary-100" fill="currentColor" viewBox="0 0 24 24">
+                  <a href="https://www.youtube.com/channel/UCMLiJqgqVMG3frZtT5HYwMQ" target="_blank"
+                    class="bg-primary-100 p-3 rounded-full hover:bg-primary-500 hover:text-white transition-colors">
+                    <svg class="w-6 h-6 text-primary-500 hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path
                         d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                     </svg>
                   </a>
                 </div>
               </div>
-      
-              <!-- Festival Calendar - keeping dark blue while adjusting accent colors -->
-              <div class="bg-tertiary-700 p-8 rounded-xl border border-tertiary-600">
-                <h3 class="text-2xl font-bold text-primary-500 mb-4">Upcoming Festivals</h3>
-                <div class="text-primary-100 space-y-2">
-                  <div class="flex justify-between border-b border-tertiary-600 pb-2">
+
+              <!-- Festival Calendar -->
+              <div class="bg-white p-8 rounded-xl shadow-lg border border-accent-500/20">
+                <h3 class="text-2xl font-bold text-tertiary-800 mb-4">Upcoming Festivals</h3>
+                <div class="text-tertiary-700 space-y-2">
+                  <div class="flex justify-between border-b border-primary-100 pb-2">
                     <span>Rama Navami</span>
-                    <span class="text-primary-400">April 17, 2025</span>
+                    <span class="text-primary-600">April 17, 2025</span>
                   </div>
-                  <div class="flex justify-between border-b border-tertiary-600 pb-2">
+                  <div class="flex justify-between border-b border-primary-100 pb-2">
                     <span>Akshaya Tritiya</span>
-                    <span class="text-primary-400">May 4, 2025</span>
+                    <span class="text-primary-600">May 4, 2025</span>
                   </div>
-                  <div class="flex justify-between border-b border-tertiary-600 pb-2">
+                  <div class="flex justify-between border-b border-primary-100 pb-2">
                     <span>Guru Purnima</span>
-                    <span class="text-primary-400">July 21, 2025</span>
+                    <span class="text-primary-600">July 21, 2025</span>
                   </div>
                   <div class="flex justify-between">
                     <span>Janmashtami</span>
-                    <span class="text-primary-400">August 24, 2025</span>
+                    <span class="text-primary-600">August 24, 2025</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
+
         <script>
           document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
@@ -1880,15 +2034,15 @@
 
   <htmlCode>
     <div id="root">
-      <footer id="footer" class="bg-tertiary-900 pt-12 pb-6 relative overflow-hidden">
+      <footer id="footer" class="bg-gradient-to-r from-primary-500 to-accent-600 pt-12 pb-6 relative overflow-hidden">
         <!-- Decorative background patterns -->
-        <div class="absolute inset-0 opacity-5 pointer-events-none">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
           <!-- Om symbol repeating pattern -->
           <div class="absolute inset-0">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
               <pattern id="om-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
                 <text x="50" y="50" font-family="serif" font-size="40" text-anchor="middle" dominant-baseline="middle"
-                  fill="#ffa000">ॐ</text>
+                  fill="#FFFFFF">ॐ</text>
               </pattern>
               <rect x="0" y="0" width="100%" height="100%" fill="url(#om-pattern)" />
             </svg>
@@ -1896,23 +2050,22 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="grid md:grid-cols-4 gap-8 pb-8 border-b border-tertiary-700">
+          <div class="grid md:grid-cols-4 gap-8 pb-8 border-b border-white/20">
             <!-- About Section -->
             <div class="md:col-span-2">
-              <h3 class="text-2xl font-bold text-primary-500 mb-4">Dr. Dharmanand Thakur</h3>
-              <p class="text-primary-200 mb-4">Expert Vedic Astrologer with over 27+ years of experience in providing
+              <h3 class="text-2xl font-bold text-white mb-4">Dr. Dharmanand Thakur</h3>
+              <p class="text-white/80 mb-4">Expert Vedic Astrologer with over 27+ years of experience in providing
                 spiritual guidance and astrological solutions.</p>
               <div class="flex space-x-4">
                 <a href="https://www.facebook.com/drdharmanandastro/"
-                  class="text-primary-300 hover:text-primary-500 transition-colors">
+                  class="text-white/80 hover:text-white transition-colors">
                   <span class="sr-only">Facebook</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
                       d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
                 </a>
-                <a href="https://x.com/dharmanandthak1"
-                  class="text-primary-300 hover:text-primary-500 transition-colors">
+                <a href="https://x.com/dharmanandthak1" class="text-white/80 hover:text-white transition-colors">
                   <span class="sr-only">Twitter</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -1920,7 +2073,7 @@
                   </svg>
                 </a>
                 <a href="https://www.instagram.com/drdharmanandastro/?hl=en"
-                  class="text-primary-300 hover:text-primary-500 transition-colors">
+                  class="text-white/80 hover:text-white transition-colors">
                   <span class="sr-only">Instagram</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -1928,7 +2081,7 @@
                   </svg>
                 </a>
                 <a href="https://www.youtube.com/channel/UCMLiJqgqVMG3frZtT5HYwMQ"
-                  class="text-primary-300 hover:text-primary-500 transition-colors">
+                  class="text-white/80 hover:text-white transition-colors">
                   <span class="sr-only">YouTube</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -1942,14 +2095,14 @@
             <div>
               <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
               <ul class="space-y-2">
-                <li><a href="#services" class="text-primary-200 hover:text-primary-500 transition-colors">Services</a>
+                <li><a href="#services" class="text-white/80 hover:text-white transition-colors">Services</a>
                 </li>
-                <li><a href="#about" class="text-primary-200 hover:text-primary-500 transition-colors">About Us</a></li>
-                <li><a href="#testimonials"
-                    class="text-primary-200 hover:text-primary-500 transition-colors">Testimonials</a></li>
-                <li><a href="#zodiac" class="text-primary-200 hover:text-primary-500 transition-colors">Zodiac
+                <li><a href="#about" class="text-white/80 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#testimonials" class="text-white/80 hover:text-white transition-colors">Testimonials</a>
+                </li>
+                <li><a href="#zodiac" class="text-white/80 hover:text-white transition-colors">Zodiac
                     Predictions</a></li>
-                <li><a href="#contact" class="text-primary-200 hover:text-primary-500 transition-colors">Contact</a>
+                <li><a href="#contact" class="text-white/80 hover:text-white transition-colors">Contact</a>
                 </li>
               </ul>
             </div>
@@ -1958,24 +2111,24 @@
             <div>
               <h4 class="text-lg font-semibold text-white mb-4">Contact Info</h4>
               <ul class="space-y-2">
-                <li class="flex items-center text-primary-200">
-                  <svg class="w-5 h-5 mr-2 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
+                <li class="flex items-center text-white/80">
+                  <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
                       clip-rule="evenodd"></path>
                   </svg>
                   Delhi, India
                 </li>
-                <li class="flex items-center text-primary-200">
-                  <svg class="w-5 h-5 mr-2 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
+                <li class="flex items-center text-white/80">
+                  <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                   </svg>
                   <a href="mailto:dharmanand.shrikant@gmail.com"
-                    class="hover:text-primary-500 transition-colors">dharmanand.shrikant@gmail.com</a>
+                    class="hover:text-white transition-colors">dharmanand.shrikant@gmail.com</a>
                 </li>
-                <li class="flex items-center text-primary-200">
-                  <svg class="w-5 h-5 mr-2 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
+                <li class="flex items-center text-white/80">
+                  <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                     </path>
@@ -1988,21 +2141,21 @@
 
           <!-- Copyright -->
           <div class="pt-8 text-center relative">
-            <p class="text-primary-200 text-sm">
+            <p class="text-white/80 text-sm">
               © 2025 Dr. Dharmanand Thakur. All rights reserved.
             </p>
-            <div class="flex justify-center space-x-4 mt-2 text-sm text-primary-300">
-              <a href="#" class="hover:text-primary-500 transition-colors">Privacy Policy</a>
+            <div class="flex justify-center space-x-4 mt-2 text-sm text-white/70">
+              <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
               <span>|</span>
-              <a href="#" class="hover:text-primary-500 transition-colors">Terms of Service</a>
+              <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
             </div>
 
             <!-- Added decorative element at bottom -->
             <div class="flex justify-center mt-4">
               <svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,15 L40,15" stroke="#ffa000" stroke-width="1" stroke-dasharray="3,3" />
-                <text x="60" y="20" font-family="serif" font-size="20" text-anchor="middle" fill="#ffa000">ॐ</text>
-                <path d="M80,15 L120,15" stroke="#ffa000" stroke-width="1" stroke-dasharray="3,3" />
+                <path d="M0,15 L40,15" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3,3" />
+                <text x="60" y="20" font-family="serif" font-size="20" text-anchor="middle" fill="#FFFFFF">ॐ</text>
+                <path d="M80,15 L120,15" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3,3" />
               </svg>
             </div>
           </div>
@@ -2012,6 +2165,11 @@
   </htmlCode>
 </element>
 <div id="page_complete">
+  <a href="https://wa.me/919899876127" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110" aria-label="Contact us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-8 h-8 fill-white">
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+  </a>
   <script>
     console.log('Page complete');
   </script>
