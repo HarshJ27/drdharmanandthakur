@@ -460,25 +460,39 @@
               <div class="mr-3 w-12 h-12 relative flex items-center justify-center">
                 <img src="images/sun.png" alt="Sun" class="w-full h-full object-contain animate-sun-pulse">
               </div>
-
-              <span class="text-xl font-bold text-tertiary-800">Dr. Dharmanand Astrology </br> & Company</span>
+              <span class="text-xl font-bold text-tertiary-800">Dr. Dharmanand Astrology <br> & Company</span>
             </div>
-
-            <div class="hidden md:block">
-              <div class="ml-10 flex items-center space-x-8">
+            
+            <div class="hidden md:flex items-center">
+              <div class="ml-10 flex items-center space-x-6 mr-6">
                 <a href="#hero" class="text-tertiary-800 hover:text-accent-600 transition-colors">Home</a>
                 <a href="#services" class="text-tertiary-800 hover:text-accent-600 transition-colors">Services</a>
                 <a href="#about" class="text-tertiary-800 hover:text-accent-600 transition-colors">About</a>
                 <a href="#benefits" class="text-tertiary-800 hover:text-accent-600 transition-colors">Benefits</a>
                 <a href="#youtube" class="text-tertiary-800 hover:text-accent-600 transition-colors">Videos</a>
-                <a href="#testimonials"
-                  class="text-tertiary-800 hover:text-accent-600 transition-colors">Testimonials</a>
-                <a href="#zodiac" class="text-tertiary-800 hover:text-accent-600 transition-colors">2025 Predictions</a>
+                <a href="#testimonials" class="text-tertiary-800 hover:text-accent-600 transition-colors">Testimonials</a>
+                <!-- <a href="#zodiac" class="text-tertiary-800 hover:text-accent-600 transition-colors">2025 Predictions</a> -->
                 <a href="#contact" class="text-tertiary-800 hover:text-accent-600 transition-colors">Contact</a>
               </div>
+              
+              <!-- Call Button -->
+              <a href="tel:+919899876127" class="flex items-center px-4 py-2 bg-accent-500 text-white rounded-full hover:bg-accent-600 transition-colors shadow-md whitespace-nowrap">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span class="font-medium">+91 9899876127</span>
+              </a>
             </div>
-
-            <div class="md:hidden">
+            
+            <div class="md:hidden flex items-center">
+              <!-- Mobile Call Button -->
+              <a href="tel:+919899876127" class="mr-4 p-2 bg-accent-500 text-white rounded-full hover:bg-accent-600 transition-colors shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </a>
+              
+              <!-- Mobile Menu Button -->
               <button id="menu-btn" class="text-tertiary-800 hover:text-accent-600 focus:outline-none">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -487,10 +501,9 @@
             </div>
           </div>
         </div>
-
+        
         <!-- Mobile menu -->
-        <div id="mobile-menu"
-          class="hidden md:hidden bg-primary-400/95 backdrop-blur-sm animate__animated animate__fadeIn">
+        <div id="mobile-menu" class="hidden md:hidden bg-primary-400/95 backdrop-blur-sm animate__animated animate__fadeIn">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#hero" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Home</a>
             <a href="#services" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Services</a>
@@ -498,38 +511,35 @@
             <a href="#benefits" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Benefits</a>
             <a href="#youtube" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Videos</a>
             <a href="#testimonials" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Testimonials</a>
-            <a href="#zodiac" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">2025 Predictions</a>
+            <!-- <a href="#zodiac" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">2025 Predictions</a> -->
             <a href="#contact" class="block px-3 py-2 text-tertiary-800 hover:text-accent-600">Contact</a>
           </div>
         </div>
       </nav>
-
+      
       <!-- Add these styles to your CSS -->
       <style>
         @keyframes sun-pulse {
-
-          0%,
-          100% {
+          0%, 100% {
             transform: scale(1);
             filter: brightness(1);
           }
-
           50% {
             transform: scale(1.08);
             filter: brightness(1.1);
           }
         }
-
+        
         .animate-sun-pulse {
           animation: sun-pulse 4s ease-in-out infinite;
         }
       </style>
-
+      
       <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         let isOpen = false;
-
+        
         menuBtn.addEventListener('click', () => {
           isOpen = !isOpen;
           if (isOpen) {
@@ -543,7 +553,7 @@
             }, 500);
           }
         });
-
+        
         // Close mobile menu when clicking on links
         document.querySelectorAll('#mobile-menu a').forEach(link => {
           link.addEventListener('click', () => {
@@ -565,7 +575,7 @@
       <section id="hero"
         class="min-h-[70vh] bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 relative overflow-hidden">
         <!-- Background decorative elements with rangoli-inspired pattern -->
-        <div class="absolute inset-0 opacity-20">
+        <div class="absolute inset-0 opacity-15">
           <!-- Primary background pattern from contact section -->
           <div class="w-full h-full">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -587,7 +597,6 @@
               <rect x="0" y="0" width="100%" height="100%" fill="url(#hero-rangoli)" />
             </svg>
           </div>
-
           <!-- Additional lighting effects -->
           <div
             class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2 opacity-30">
@@ -596,55 +605,80 @@
             class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2 opacity-30">
           </div>
         </div>
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full pt-32">
           <div class="grid md:grid-cols-2 gap-8 items-center h-full">
             <div class="text-center md:text-left animate__animated animate__fadeInLeft">
-              <h1 class="text-4xl md:text-6xl font-bold text-tertiary-900 mb-4 leading-tight">
+              <h1 class="text-4xl md:text-6xl font-bold text-maroon-700 mb-4 leading-tight drop-shadow-md">
                 Vedic Astrology Expert
               </h1>
-              <h2 class="text-2xl md:text-3xl font-semibold text-white mb-3">
-                Dr. Dharmanand Thakur 
-              </h2>
-              <p class="text-sm md:text-base font-medium text-white/90 mb-4 italic">
-                (BA-Hons(Shastri), B.Ed.(Shiksha Shastri), M.A.(Ganit), M.A(Falit), M.A.(Shaitya), PhD)
-              </p>
-              <h3 class="text-xl md:text-2xl font-semibold text-white/95 mb-6 border-b border-white/20 pb-3 inline-block">
+              <h3
+                class="text-xl md:text-2xl font-semibold text-maroon-800 mb-6 border-b-2 border-maroon-700/70 pb-3 inline-block drop-shadow-md">
                 Maa Siddheshwari Jyotish Office
               </h3>
-              <p class="text-lg text-white/90 mb-8 max-w-2xl">
-                With over 27+ years of experience in Hindu astrology, unlock the secrets of your destiny and find
+              <h2 class="text-2xl md:text-3xl font-semibold text-blue-900 mb-3 drop-shadow-md">
+                Dr. Dharmanand Thakur
+              </h2>
+              <p
+                class="text-sm md:text-base font-medium text-blue-800 mb-4 italic bg-white/60 inline-block px-3 py-1 rounded-md backdrop-blur-sm">
+                (Assistant Professor, Shastri(Pratishtha)(B.A.-Hons)(KSDSU, Darbhanga), Shiksha Shastri(B.Ed.)(KUK
+                Haryana), Ganit Jyotishacharya(M.A. Ganit)(KSDSU Darbhanga), Falit Jyotishacharya(M.A.)(SLBSRSV Central
+                University), Shaityacharya(M.A. Sahitya)(Central Sanskrit University), Vidhavaridhi(Ph.D)(KSDSU
+                Darbhanga))
+              </p>
+              <p class="text-lg text-blue-900 mb-8 max-w-2xl bg-white/50 backdrop-blur-sm p-4 rounded-lg shadow-lg">
+                With over 27+ years of experience in Vedic astrology, unlock the secrets of your destiny and find
                 guidance in life's journey.
               </p>
               <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="#contact"
-                  class="inline-block px-8 py-4 bg-white hover:bg-tertiary-50 text-primary-600 font-bold rounded-lg transition-colors animate__animated animate__pulse animate__infinite shadow-lg">
+                  class="inline-block px-8 py-4 bg-maroon-700 hover:bg-maroon-800 text-white font-bold rounded-lg transition-colors animate__animated animate__pulse animate__infinite shadow-lg">
                   Book Consultation
                 </a>
                 <a href="#services"
-                  class="inline-block px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-primary-600 font-bold rounded-lg transition-all">
+                  class="inline-block px-8 py-4 border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white font-bold rounded-lg transition-all shadow-lg">
                   Explore Services
                 </a>
               </div>
             </div>
-
             <div class="relative animate__animated animate__fadeInRight">
-              <div class="aspect-square rounded-full bg-white/10 backdrop-blur-sm p-8 relative">
+              <div class="aspect-square rounded-full bg-white/20 backdrop-blur-sm p-4 relative shadow-xl">
                 <div
-                  class="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent rounded-full animate-spin-slow">
+                  class="absolute inset-0 bg-gradient-to-tr from-white/30 to-transparent rounded-full animate-spin-slow">
                 </div>
-                <div class="h-full w-full rounded-full border-2 border-white/50 flex items-center justify-center">
-                  <div class="text-center">
-                    <div class="text-6xl text-white mb-4">ॐ</div>
-                    <div class="text-xl text-white font-semibold">Illuminating Lives Through Vedic Wisdom</div>
-                    <div class="text-white/80 mt-2">27+ Years Experience</div>
-                  </div>
+                <div
+                  class="h-full w-full rounded-full border-3 border-white/70 flex items-center justify-center overflow-hidden">
+                  <!-- Replace with your image -->
+                  <img src="images/ganesh.jpg" alt="Dr. Dharmanand Thakur"
+                    class="w-full h-full object-cover rounded-full">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <style>
+        /* Add custom colors if not already defined in your Tailwind config */
+        .text-maroon-700 {
+          color: #800020;
+        }
+
+        .text-maroon-800 {
+          color: #600018;
+        }
+
+        .bg-maroon-700 {
+          background-color: #800020;
+        }
+
+        .bg-maroon-800 {
+          background-color: #600018;
+        }
+
+        .border-maroon-700 {
+          border-color: #800020;
+        }
+      </style>
     </div>
   </htmlCode>
 </element>
@@ -655,9 +689,9 @@
       <section id="services" class="py-20 bg-primary-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-tertiary-800 mb-4">Our Services</h2>
-            <div class="w-24 h-1 bg-accent-500 mx-auto"></div>
-            <p class="text-lg text-tertiary-600 mt-4">Discover divine guidance through our comprehensive astrological
+            <h2 class="text-4xl font-bold text-maroon-700 mb-4 leading-tight drop-shadow-md">Our Services</h2>
+            <div class="w-24 h-1 bg-maroon-700 mx-auto"></div>
+            <p class="text-lg text-maroon-700 mt-4">Discover divine guidance through our comprehensive astrological
               services</p>
           </div>
 
@@ -669,7 +703,8 @@
                 <span class="text-3xl">🪐</span>
               </div>
               <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Birth Chart Making</h3>
-              <p class="text-tertiary-600 text-center">Expert creation of personalized Vedic birth charts revealing your cosmic blueprint.</p>
+              <p class="text-tertiary-600 text-center">Expert creation of personalized Vedic birth charts revealing your
+                cosmic blueprint.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
                   class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
@@ -693,7 +728,7 @@
             </div>
 
             <!-- Service 2 -->
-            <div
+            <!-- <div
               class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp border-t-4 border-accent-500"
               style="animation-delay: 0.2s;">
               <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -707,7 +742,7 @@
                   class="inline-block px-6 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors">Book
                   Now</a>
               </div>
-            </div>
+            </div> -->
 
             <!-- Service 3 -->
             <div
@@ -734,8 +769,7 @@
                 <span class="text-3xl">✋🏻</span>
               </div>
               <h3 class="text-xl font-bold text-tertiary-800 mb-3 text-center">Palmistry</h3>
-              <p class="text-tertiary-600 text-center">Expert guidance on Vastu Shastra for your home and business
-                premises.</p>
+              <p class="text-tertiary-600 text-center">Discover insights about your future and personality through the ancient art of palm reading.</p>
               <div class="mt-6 text-center">
                 <a href="#contact"
                   class="inline-block px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">Book
@@ -905,7 +939,20 @@
 
   <htmlCode>
     <div id="root">
-      <section id="about" class="py-20 bg-gradient-to-r from-primary-100 to-accent-100">
+      <section id="about" class="py-20 bg-gradient-to-r from-primary-100 to-accent-100 relative">
+        <!-- Language toggle button -->
+        <div class="absolute top-6 right-6">
+          <button id="languageToggle"
+            class="bg-white px-3 py-1 rounded-full shadow-md border border-primary-300 flex items-center space-x-1 hover:bg-primary-50 transition-colors">
+            <span id="currentLang" class="text-sm font-medium text-tertiary-800">EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+            </svg>
+          </button>
+        </div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="animate__animated animate__fadeInLeft">
@@ -941,51 +988,103 @@
               </div>
             </div>
 
-            <!-- Rest of the about section content remains the same -->
+            <!-- About content with English and Hindi versions -->
             <div class="animate__animated animate__fadeInRight">
-              <h2 class="text-4xl font-bold mb-6 text-tertiary-800">About Dr. Dharmanand Thakur</h2>
-              <div class="space-y-4 text-tertiary-700">
-                <p>Dr. Dharmanand Thakur is a world-renowned astrologer who has received education in astrology from
-                  several prominent universities. With 27 years of rich experience, he is known for his deep expertise
-                  in the field of astrology. His accurate predictions and consultations have brought positive changes in
-                  the lives of millions of people.</p>
+              <!-- English content (default) -->
+              <div id="english-content">
+                <h2 class="text-4xl font-bold mb-6 text-tertiary-800">About Dr. Dharmanand Thakur</h2>
+                <div class="space-y-4 text-tertiary-700">
+                  <p>Dr. Dharmanand Thakur is a world-renowned astrologer who has received education in astrology from
+                    several prominent universities. With 27 years of rich experience, he is known for his deep expertise
+                    in the field of astrology. His accurate predictions and consultations have brought positive changes
+                    in the lives of millions of people.</p>
 
-                <p>The remedies and advice provided by him have improved the careers, businesses, and jobs of many
-                  individuals. With his guidance, people are able to make the right decisions in their lives, leading
-                  them to success and prosperity. His expertise spans across:</p>
+                  <p>The remedies and advice provided by him have improved the careers, businesses, and jobs of many
+                    individuals. With his guidance, people are able to make the right decisions in their lives, leading
+                    them to success and prosperity. His expertise spans across:</p>
 
-                <ul class="list-none space-y-2 ml-4">
-                  <li class="flex items-center">
-                    <span class="text-primary-500 mr-2">✦</span>
-                    Creating Birth Charts
-                  </li>
-                  <li class="flex items-center">
-                    <span class="text-primary-500 mr-2">✦</span>
-                    Horoscope Reading
-                  </li>
-                  <li class="flex items-center">
-                    <span class="text-primary-500 mr-2">✦</span>
-                    Kundli Matching
-                  </li>
-                  <li class="flex items-center">
-                    <span class="text-primary-500 mr-2">✦</span>
-                    Vastu Shastra
-                  </li>
-                  <li class="flex items-center">
-                    <span class="text-primary-500 mr-2">✦</span>
-                    And much more...
-                  </li>
-                </ul>
+                  <ul class="list-none space-y-2 ml-4">
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      Creating Birth Charts
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      Horoscope Reading
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      Kundli Matching
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      Vastu Shastra
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      And much more...
+                    </li>
+                  </ul>
 
-                <p>His unique ability to solve people's problems through prayer rituals and Yajnas makes him an
-                  exceptional astrologer. Through his knowledge and guidance, people attain mental peace, happiness, and
-                  prosperity in their lives.</p>
+                  <p>His unique ability to solve people's problems through prayer rituals and Yajnas makes him an
+                    exceptional astrologer. Through his knowledge and guidance, people attain mental peace, happiness,
+                    and prosperity in their lives.</p>
 
-                <div class="pt-6">
-                  <a href="#contact"
-                    class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-lg transition-colors">
-                    Schedule Consultation
-                  </a>
+                  <div class="pt-6">
+                    <a href="#contact"
+                      class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-lg transition-colors">
+                      Schedule Consultation
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hindi content (hidden by default) -->
+              <div id="hindi-content" class="hidden">
+                <h2 class="text-4xl font-bold mb-6 text-tertiary-800">डॉ. धर्मानंद ठाकुर के बारे में</h2>
+                <div class="space-y-4 text-tertiary-700">
+                  <p>डॉ. धर्मानंद ठाकुर एक विश्व प्रसिद्ध ज्योतिषाचार्य हैं, जिन्होंने कई प्रतिष्ठित विश्वविद्यालयों से
+                    ज्योतिष में शिक्षा प्राप्त की है। 27 वर्षों के समृद्ध अनुभव के साथ, वे ज्योतिष के क्षेत्र में अपनी
+                    गहरी विशेषज्ञता के लिए जाने जाते हैं। उनकी सटीक भविष्यवाणियों और परामर्शों ने लाखों लोगों के जीवन
+                    में सकारात्मक परिवर्तन लाए हैं।</p>
+
+                  <p>उनके द्वारा प्रदान किए गए उपचार और सलाह ने कई व्यक्तियों के करियर, व्यवसाय और नौकरियों में सुधार
+                    किया है। उनके मार्गदर्शन से, लोग अपने जीवन में सही निर्णय लेने में सक्षम होते हैं, जिससे उन्हें
+                    सफलता और समृद्धि मिलती है। उनकी विशेषज्ञता इन क्षेत्रों में है:</p>
+
+                  <ul class="list-none space-y-2 ml-4">
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      जन्म कुंडली निर्माण
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      राशिफल पठन
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      कुंडली मिलान
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      वास्तु शास्त्र
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-primary-500 mr-2">✦</span>
+                      और बहुत कुछ...
+                    </li>
+                  </ul>
+
+                  <p>प्रार्थना अनुष्ठानों और यज्ञों के माध्यम से लोगों की समस्याओं को हल करने की उनकी अनूठी क्षमता
+                    उन्हें एक असाधारण ज्योतिषी बनाती है। उनके ज्ञान और मार्गदर्शन के माध्यम से, लोग मानसिक शांति, खुशी
+                    और अपने जीवन में समृद्धि प्राप्त करते हैं।</p>
+
+                  <div class="pt-6">
+                    <a href="#contact"
+                      class="inline-block px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded-lg transition-colors">
+                      परामर्श अनुसूचित करें
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -997,11 +1096,15 @@
           function imageSlider() {
             return {
               images: [
-                'images/drdharma.jpeg',  // Original image
+                'images/drdharma.jpeg', // Original image
+
                 'images/drthakur2.jpeg', // Add your second image path here
-                'images/drthakur4.jpeg', // Add your third image path here
-                'images/dr5.jpeg',
-                'images/drthakur3.jpeg'
+
+                'images/dr2.png', // Add your third image path here
+
+                'images/dr1.png',
+
+                'images/drthakur3.jpeg' // Add your third image path here
                 // Add more image paths as needed
               ],
               currentImage: 0,
@@ -1016,6 +1119,30 @@
               }
             }
           }
+        </script>
+
+        <!-- Language Toggle Script -->
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const languageToggle = document.getElementById('languageToggle');
+            const currentLang = document.getElementById('currentLang');
+            const englishContent = document.getElementById('english-content');
+            const hindiContent = document.getElementById('hindi-content');
+
+            languageToggle.addEventListener('click', function () {
+              if (currentLang.textContent === 'EN') {
+                // Switch to Hindi
+                englishContent.classList.add('hidden');
+                hindiContent.classList.remove('hidden');
+                currentLang.textContent = 'हिंदी';
+              } else {
+                // Switch to English
+                hindiContent.classList.add('hidden');
+                englishContent.classList.remove('hidden');
+                currentLang.textContent = 'EN';
+              }
+            });
+          });
         </script>
       </section>
     </div>
@@ -1052,9 +1179,9 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-tertiary-800 mb-4">Benefits of Consultation</h2>
-            <div class="w-24 h-1 bg-primary-500 mx-auto"></div>
-            <p class="text-lg text-tertiary-700 mt-4">Experience transformative guidance through ancient Vedic wisdom
+            <h2 class="text-4xl font-bold text-maroon-700 mb-4">Benefits of Consultation</h2>
+            <div class="w-24 h-1 bg-maroon-700 mx-auto"></div>
+            <p class="text-lg text-maroon-700 mt-4">Experience transformative guidance through ancient Vedic wisdom
             </p>
           </div>
 
@@ -1162,9 +1289,9 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-white mb-4">Latest Videos</h2>
-            <div class="w-24 h-1 bg-white mx-auto"></div>
-            <p class="text-lg text-white mt-4">Watch our latest astrological insights and predictions</p>
+            <h2 class="text-4xl font-bold text-maroon-700 mb-4">Latest Videos</h2>
+            <div class="w-24 h-1 bg-maroon-700 mx-auto"></div>
+            <p class="text-lg text-maroon-700 mt-4">Watch our latest astrological insights and predictions</p>
           </div>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1258,9 +1385,9 @@
       <section id="testimonials" class="py-20 bg-primary-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-tertiary-800 mb-4">Client Testimonials</h2>
-            <div class="w-24 h-1 bg-primary-500 mx-auto"></div>
-            <p class="text-lg text-tertiary-600 mt-4">Hear from those who have experienced transformation</p>
+            <h2 class="text-4xl font-bold text-maroon-700 mb-4">Client Testimonials</h2>
+            <div class="w-24 h-1 bg-maroon-700 mx-auto"></div>
+            <p class="text-lg text-maroon-700 mt-4">Hear from those who have experienced transformation</p>
           </div>
 
           <div class="relative" x-data="testimonialSlider()">
@@ -1329,7 +1456,7 @@
                       </div>
                       <div class="ml-4">
                         <h3 class="text-xl font-semibold text-tertiary-800">Rohit Asthana</h3>
-                        <p class="text-tertiary-600">IT Professional</p>
+                        <p class="text-tertiary-600">MBA</p>
                       </div>
                     </div>
                     <p class="text-tertiary-700 mb-4">"I highly recommend Dr. Dharmanand (Shrikant) Thakur for
@@ -1355,7 +1482,7 @@
                           src="images/maithili.jpeg" alt="maithili">
                       </div>
                       <div class="ml-4">
-                        <h3 class="text-xl font-semibold text-tertiary-800">डॉ मैथिली कुमारी</h3>
+                        <h3 class="text-xl font-semibold text-tertiary-800">डॉ0 मैथिली कुमारी</h3>
                         <p class="text-tertiary-600">सहायक प्राध्यापिका ज्योतिष</p>
                       </div>
                     </div>
@@ -1382,7 +1509,7 @@
                       </div>
                       <div class="ml-4">
                         <h3 class="text-xl font-semibold text-tertiary-800">Bhupinder Singh</h3>
-                        <p class="text-tertiary-600">Businessman</p>
+                        <p class="text-tertiary-600">Businessman, U.S.A.</p>
                       </div>
                     </div>
                     <p class="text-tertiary-700 mb-4">"Dr. Dharmanand is truly one of a kind Astrologer where his
@@ -1453,6 +1580,57 @@
                   </div>
                 </div>
 
+                <div class="w-full flex-shrink-0 px-4">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-accent-500">
+                    <div class="flex items-center mb-6">
+                      <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <!-- <span class="text-2xl">👩</span> -->
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
+                          src="images/kanchan.jpeg" alt="Bhupinder Singh">
+                      </div>
+                      <div class="ml-4">
+                        <h3 class="text-xl font-semibold text-tertiary-800">Kanchan Singhal</h3>
+                        <p class="text-tertiary-600">Computer Science Engineer</p>
+                      </div>
+                    </div>
+                    <p class="text-tertiary-700 mb-4">"डॉ. धर्मानंद ठाकुर जी, आपकी असाधारण ज्योतिषीय विद्वत्ता ने मेरे
+                      जीवन को एक नई दिशा दी है। आपकी सटीक भविष्यवाणियाँ और मार्गदर्शन ने मुझे जीवन की चुनौतियों का सामना
+                      करने में मदद की है।
+
+                      सम्मानित डॉ. ठाकुर जी, आपकी ज्योतिष के क्षेत्र में समर्पण वाकई प्रशंसनीय है। आपकी वेदिक ज्ञान और
+                      आधुनिक दृष्टिकोण ने मुझे जीवन के रहस्यों को समझने में मदद की है। धन्यवाद आपके ज्ञान और मार्गदर्शन
+                      के लिए।
+
+                      डॉ. धर्मानंद ठाकुर जी, आप ज्योतिष के क्षेत्र में एक उज्ज्वल नक्षत्र हैं! आपकी वेदिक ज्ञान और
+                      आधुनिक दृष्टिकोण ने मुझे अपने बारे में और दुनिया में मेरी जगह के बारे में समझने में मदद की है। मैं
+                      आपके मार्गदर्शन और समर्थन के लिए हमेशा आभारी रहूँगा।"</p>
+                    <div class="flex text-accent-500">
+                      <span>★★★★★</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex-shrink-0 px-4">
+                  <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-accent-500">
+                    <div class="flex items-center mb-6">
+                      <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <!-- <span class="text-2xl">👩</span> -->
+                        <img class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0"
+                          src="images/profile.png" alt="Bhupinder Singh">
+                      </div>
+                      <div class="ml-4">
+                        <h3 class="text-xl font-semibold text-tertiary-800">Rahul Kumar Jha</h3>
+                        <p class="text-tertiary-600">Computer Science Engineer</p>
+                      </div>
+                    </div>
+                    <p class="text-tertiary-700 mb-4">"Dr. Dharmanand Thakur is a very good astrologer. He does exact
+                      prediction"</p>
+                    <div class="flex text-accent-500">
+                      <span>★★★★★</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
@@ -1487,6 +1665,10 @@
                 class="w-3 h-3 rounded-full bg-primary-200"></button>
               <button @click="goToSlide(6)" :class="{'bg-primary-500': currentSlide === 6}"
                 class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(7)" :class="{'bg-primary-500': currentSlide === 7}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
+              <button @click="goToSlide(8)" :class="{'bg-primary-500': currentSlide === 8}"
+                class="w-3 h-3 rounded-full bg-primary-200"></button>
             </div>
           </div>
         </div>
@@ -1496,7 +1678,7 @@
         function testimonialSlider() {
           return {
             currentSlide: 0,
-            totalSlides: 7,
+            totalSlides: 9,
 
             nextSlide() {
               this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
@@ -1550,9 +1732,9 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-white mb-4">2025 Zodiac Predictions</h2>
-            <div class="w-24 h-1 bg-white mx-auto"></div>
-            <p class="text-lg text-white/80 mt-4">Discover what the stars hold for you in 2025</p>
+            <h2 class="text-4xl font-bold text-maroon-700 mb-4">2025 Zodiac Predictions</h2>
+            <div class="w-24 h-1 bg-maroon-700 mx-auto"></div>
+            <p class="text-lg text-maroon-700 mt-4">Discover what the stars hold for you in 2025</p>
           </div>
 
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -1740,18 +1922,14 @@
     <div id="root">
       <section id="cta" class="py-20 bg-primary-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            class="bg-gradient-to-r from-primary-500 via-primary-600 to-accent-500 rounded-3xl overflow-hidden shadow-2xl">
+          <div class="bg-gradient-to-r from-primary-500 via-primary-600 to-accent-500 rounded-3xl overflow-hidden shadow-2xl">
             <div class="relative px-8 py-16 md:px-16">
               <!-- Decorative Elements -->
               <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-                <div
-                  class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
                 </div>
-                <div
-                  class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl">
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl">
                 </div>
-
                 <!-- Added decorative sacred geometry -->
                 <div class="absolute inset-0 flex items-center justify-center opacity-5">
                   <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -1764,14 +1942,12 @@
                       <circle cx="300" cy="300" r="130" />
                       <circle cx="300" cy="300" r="90" />
                       <circle cx="300" cy="300" r="50" />
-
                       <!-- Triangles -->
                       <path d="M300,50 L550,425 L50,425 Z" />
                       <path d="M300,100 L500,400 L100,400 Z" />
                       <path d="M300,150 L450,375 L150,375 Z" />
                       <path d="M300,200 L400,350 L200,350 Z" />
                       <path d="M300,250 L350,325 L250,325 Z" />
-
                       <!-- Lines -->
                       <path d="M50,300 L550,300" />
                       <path d="M300,50 L300,550" />
@@ -1781,48 +1957,100 @@
                   </svg>
                 </div>
               </div>
-
-              <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="text-center md:text-left">
-                  <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 animate__animated animate__fadeIn">
-                    Unlock Your Destiny Today
-                  </h2>
-                  <p class="text-xl text-white/90 mb-6 max-w-2xl animate__animated animate__fadeIn animate__delay-1s">
-                    Get personalized astrological guidance from Dr. Dharmanand Thakur and transform your life with
-                    ancient Vedic wisdom.
-                  </p>
-                  <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                    <div class="flex items-center bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                      <span class="text-2xl mr-2">🕉</span>
-                      <span class="text-white">27+ Years Experience</span>
+              
+              <!-- Modified layout with image -->
+              <div class="grid md:grid-cols-5 gap-8 relative z-10">
+                <!-- Left Column: Text Content (3/5 width on desktop) -->
+                <div class="md:col-span-3 text-center md:text-left flex flex-col h-full justify-between">
+                  <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-maroon-700 mb-4 animate__animated animate__fadeIn">
+                      Unlock Your Destiny Today
+                    </h2>
+                    <p class="text-xl text-blue-800 mb-6 max-w-2xl animate__animated animate__fadeIn animate__delay-1s">
+                      Get personalized astrological guidance from Dr. Dharmanand Thakur and transform your life with
+                      ancient Vedic wisdom.
+                    </p>
+                    
+                    <!-- Pricing Badges -->
+                    <div class="bg-white/30 backdrop-blur-sm rounded-xl border border-white/40 p-4 mb-6 shadow-md">
+                      <div class="text-center">
+                        <span class="text-blue-800 text-sm font-medium">Special Pricing for Horoscope Reading</span>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-3 justify-center">
+                          <div class="flex flex-col items-center bg-white/50 backdrop-blur-sm rounded-lg px-6 py-3 shadow-sm">
+                            <span class="text-maroon-700 font-bold text-xl">₹2,500</span>
+                            <span class="text-maroon-600 text-sm">Indian Clients</span>
+                          </div>
+                          <div class="flex flex-col items-center bg-white/50 backdrop-blur-sm rounded-lg px-6 py-3 shadow-sm">
+                            <span class="text-maroon-700 font-bold text-xl">₹3,100</span>
+                            <span class="text-maroon-600 text-sm">International Clients</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="flex items-center bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                      <span class="text-2xl mr-2">⭐</span>
-                      <span class="text-white">Expert Guidance</span>
+                    
+                    <!-- Payment Options -->
+                    <div class="bg-white/30 backdrop-blur-sm rounded-xl border border-white/40 p-4 mb-6 shadow-md">
+                      <div class="md:text-left text-center">
+                        <span class="text-maroon-700 text-sm font-medium">Payment Options</span>
+                        <div class="mt-3">
+                          <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                            <!-- UPI Options -->
+                            <div class="bg-white rounded-lg px-3 py-2 shadow-sm">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png" alt="UPI" class="h-6 object-contain">
+                            </div>
+                            <div class="bg-white rounded-lg px-3 py-2 shadow-sm">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/512px-Google_Pay_Logo.svg.png" alt="Google Pay" class="h-6 object-contain">
+                            </div>
+                            <div class="bg-white rounded-lg px-3 py-2 shadow-sm">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/PhonePe_Logo.svg/1200px-PhonePe_Logo.svg.png" alt="PhonePe" class="h-6 object-contain">
+                            </div>
+                            <div class="bg-white rounded-lg px-3 py-2 shadow-sm">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/1200px-Paytm_Logo_%28standalone%29.svg.png" alt="Paytm" class="h-6 object-contain">
+                            </div>
+                          </div>
+                          <p class="text-maroon-700 mt-3 font-medium">Pay to: <span class="bg-white/50 text-blue-800 px-3 py-1 rounded font-bold">+91 9899876127</span></p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="flex items-center bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                      <span class="text-2xl mr-2">🙏</span>
-                      <span class="text-white">Vedic Solutions</span>
+                    
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start mb-6">
+                      <div class="flex items-center bg-white/30 backdrop-blur-sm rounded-lg px-4 py-2 shadow-sm">
+                        <span class="text-2xl mr-2">🕉</span>
+                        <span class="text-maroon-700 font-medium">27+ Years Experience</span>
+                      </div>
+                      <div class="flex items-center bg-white/30 backdrop-blur-sm rounded-lg px-4 py-2 shadow-sm">
+                        <span class="text-2xl mr-2">⭐</span>
+                        <span class="text-maroon-700 font-medium">Expert Guidance</span>
+                      </div>
+                      <div class="flex items-center bg-white/30 backdrop-blur-sm rounded-lg px-4 py-2 shadow-sm">
+                        <span class="text-2xl mr-2">🙏</span>
+                        <span class="text-maroon-700 font-medium">Vedic Solutions</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="flex flex-col items-center animate__animated animate__fadeInRight">
-                  <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
-                    <a href="#contact"
-                      class="inline-block px-8 py-4 bg-white text-tertiary-800 rounded-xl font-bold text-lg hover:bg-tertiary-50 transition-colors animate__animated animate__pulse animate__infinite">
+                  
+                  <div class="bg-white/30 backdrop-blur-sm p-6 rounded-2xl border border-white/40 w-full shadow-md mt-4">
+                    <a href="#contact" class="inline-block w-full px-8 py-4 bg-maroon-700 text-white rounded-xl font-bold text-lg hover:bg-maroon-800 transition-colors animate__animated animate__pulse animate__infinite text-center shadow-md">
                       Book Consultation Now
                     </a>
-                    <p class="text-white/80 text-sm mt-4 text-center">
+                    <p class="text-maroon-700 text-sm mt-4 text-center font-medium">
                       Limited Time Special Offer
                     </p>
                   </div>
                 </div>
+                
+                <!-- Right Column: Image (2/5 width on desktop) -->
+                <div class="md:col-span-2 flex items-center justify-center animate__animated animate__fadeInRight">
+                  <!-- Featured Image in a decorative frame -->
+                  <div class="rounded-xl overflow-hidden border-3 border-white/50 shadow-xl w-full h-full">
+                    <!-- Image path corrected to remove double extension -->
+                    <img src="images/kali.jpeg.jpg" alt="Vedic Astrology" class="w-full h-full object-cover aspect-square md:aspect-auto">
+                  </div>
+                </div>
               </div>
-
+              
               <!-- Om Symbol Watermark -->
-              <div
-                class="absolute right-0 bottom-0 text-white/5 text-[200px] leading-none pointer-events-none select-none">
+              <div class="absolute right-0 bottom-0 text-white/5 text-[200px] leading-none pointer-events-none select-none">
                 ॐ
               </div>
             </div>
@@ -1863,9 +2091,9 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center mb-16 animate__animated animate__fadeIn">
-            <h2 class="text-4xl font-bold text-tertiary-800 mb-4">Contact Us</h2>
-            <div class="w-24 h-1 bg-accent-500 mx-auto"></div>
-            <p class="text-lg text-tertiary-700 mt-4">Begin your journey towards spiritual enlightenment</p>
+            <h2 class="text-4xl font-bold text-maroon-700 mb-4">Contact Us</h2>
+            <div class="w-24 h-1 bg-maroon-700 mx-auto"></div>
+            <p class="text-lg text-maroon-700 mt-4">Begin your journey towards spiritual enlightenment</p>
           </div>
 
           <div class="grid md:grid-cols-2 gap-12">
@@ -1928,32 +2156,46 @@
               <div class="bg-white p-8 rounded-xl shadow-lg border border-accent-500/20">
                 <h3 class="text-2xl font-bold text-tertiary-800 mb-6">Get in Touch</h3>
 
-                <div class="space-y-4">
-                  <div class="flex items-center text-tertiary-700">
-                    <svg class="w-6 h-6 text-primary-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="space-y-6">
+                  <!-- Phone number -->
+                  <div class="flex items-start">
+                    <svg class="w-6 h-6 text-primary-500 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span>+91 9899876127</span>
+                    <div class="text-tertiary-700">
+                      <p>+91 9899876127</p>
+                      <p>+91 9582136146</p>
+                      <p>+91 7678240288</p>
+                    </div>
                   </div>
 
-                  <div class="flex items-center text-tertiary-700">
-                    <svg class="w-6 h-6 text-primary-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <!-- Email -->
+                  <div class="flex items-center">
+                    <svg class="w-6 h-6 text-primary-500 mr-4 shrink-0" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     <a href="mailto:dharmanand.shrikant@gmail.com"
-                      class="hover:text-primary-500 transition-colors">dharmanand.shrikant@gmail.com</a>
+                      class="text-tertiary-700 hover:text-primary-500 transition-colors">dharmanand.shrikant@gmail.com</a>
                   </div>
 
-                  <div class="flex items-center text-tertiary-700">
-                    <svg class="w-6 h-6 text-primary-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <!-- Address -->
+                  <div class="flex items-start">
+                    <svg class="w-6 h-6 text-primary-500 mr-4 shrink-0 mt-1" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span>Delhi, India</span>
+                    <div class="text-tertiary-700">
+                      <p class="font-medium">Dr. Dharmanand Thakur</p>
+                      <p>A-133, Bindapur dda flats, POCKET -3,</p>
+                      <p>Dwarka, Uttam Nagar, New Delhi -110059</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2053,8 +2295,8 @@
           <div class="grid md:grid-cols-4 gap-8 pb-8 border-b border-white/20">
             <!-- About Section -->
             <div class="md:col-span-2">
-              <h3 class="text-2xl font-bold text-white mb-4">Dr. Dharmanand Thakur</h3>
-              <p class="text-white/80 mb-4">Expert Vedic Astrologer with over 27+ years of experience in providing
+              <h3 class="text-2xl font-bold text-maroon-700 mb-4">Dr. Dharmanand Thakur</h3>
+              <p class="border-primary-100 mb-4">Expert Vedic Astrologer with over 27+ years of experience in providing
                 spiritual guidance and astrological solutions.</p>
               <div class="flex space-x-4">
                 <a href="https://www.facebook.com/drdharmanandastro/"
@@ -2093,47 +2335,58 @@
 
             <!-- Quick Links -->
             <div>
-              <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+              <h4 class="text-lg font-semibold text-maroon-700 mb-4">Quick Links</h4>
               <ul class="space-y-2">
-                <li><a href="#services" class="text-white/80 hover:text-white transition-colors">Services</a>
+                <li><a href="#services"
+                    class="border-primary-100 hover:border-primary-300 transition-colors">Services</a>
                 </li>
-                <li><a href="#about" class="text-white/80 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#testimonials" class="text-white/80 hover:text-white transition-colors">Testimonials</a>
+                <li><a href="#about" class="border-primary-100 hover:border-primary-300 transition-colors">About Us</a>
                 </li>
-                <li><a href="#zodiac" class="text-white/80 hover:text-white transition-colors">Zodiac
+                <li><a href="#testimonials"
+                    class="border-primary-100 hover:border-primary-300 transition-colors">Testimonials</a>
+                </li>
+                <li><a href="#zodiac" class="border-primary-100 hover:border-primary-300 transition-colors">Zodiac
                     Predictions</a></li>
-                <li><a href="#contact" class="text-white/80 hover:text-white transition-colors">Contact</a>
+                <li><a href="#contact" class="border-primary-100 hover:border-primary-300 transition-colors">Contact</a>
                 </li>
               </ul>
             </div>
 
             <!-- Contact Info -->
             <div>
-              <h4 class="text-lg font-semibold text-white mb-4">Contact Info</h4>
-              <ul class="space-y-2">
-                <li class="flex items-center text-white/80">
-                  <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <h4 class="text-lg font-semibold text-maroon-700 mb-4">Contact Info</h4>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 shrink-0 mt-1 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
                       clip-rule="evenodd"></path>
                   </svg>
-                  Delhi, India
+                  <div>
+                    <p class="font-medium">Dr. Dharmanand Thakur</p>
+                    <p>A-133, Bindapur dda flats, POCKET -3,</p>
+                    <p>Dwarka, Uttam Nagar, New Delhi -110059</p>
+                  </div>
                 </li>
-                <li class="flex items-center text-white/80">
-                  <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-2 shrink-0 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                   </svg>
                   <a href="mailto:dharmanand.shrikant@gmail.com"
-                    class="hover:text-white transition-colors">dharmanand.shrikant@gmail.com</a>
+                    class="hover:text-primary-500 transition-colors">dharmanand.shrikant@gmail.com</a>
                 </li>
-                <li class="flex items-center text-white/80">
-                  <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 shrink-0 mt-1 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                     </path>
                   </svg>
-                  +91 9899876127
+                  <div>
+                    <p>+91 9899876127</p>
+                    <p>+91 9582136146</p>
+                    <p>+91 7678240288</p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -2165,9 +2418,12 @@
   </htmlCode>
 </element>
 <div id="page_complete">
-  <a href="https://wa.me/919899876127" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110" aria-label="Contact us on WhatsApp">
+  <a href="https://wa.me/919899876127" target="_blank"
+    class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
+    aria-label="Contact us on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-8 h-8 fill-white">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
     </svg>
   </a>
   <script>
